@@ -68,6 +68,11 @@ class PieChart extends View {
 </LinearLayout>
 ```
 
+```
+In Gradle projects, always use http://schemas.android.com/apk/res-auto for custom attributes less... (Ctrl+F1) 
+In Gradle projects, the actual package used in the final APK can vary; for example,you can add a .debug package suffix in one version and not the other. Therefore, you should not hardcode the application package in the resource; instead, use the special namespace http://schemas.android.com/apk/res-auto which will cause the tools to figure out the right namespace for the resource regardless of the actual package used during the build.
+```
+
 为了避免不得不重复那么长的命名空间 URL ，这里使用了 `xmlns` 指令。
 这个指令为命名空间为 `http://schemas.android.com/apk/res/com.example.customviews` 分配的是 `custom` 这个别名 。
 你能选择任何你喜欢的别名。
