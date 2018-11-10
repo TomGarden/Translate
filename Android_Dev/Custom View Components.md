@@ -1,5 +1,24 @@
 ## 0x00、 [Custom view components](https://developer.android.com/guide/topics/ui/custom-components)
 
+Android 基于基本的布局类 `View` 和 `ViewGroup` 为 UI 构建提供了复杂高效的组件。
+首先，平台包含了丰富的 View 和 ViewGroup 的子类 —— 称之为控件和布局，你能分别使用它们来构建自己的 UI 。
+
+一部分可用的控件：`Button`, `TextView`, `EditText`, `ListView`, `CheckBox`, `RadioButton`, `Gallery`, `Spinner`,还有一些专用控件：`AutoCompleteTextView`, `ImageSwitcher`, and `TextSwitcher` 。
+
+可用的布局包括： `LinearLayout`, `FrameLayout`, `RelativeLayout` 等。
+要查看更多布局请参阅 [Common Layout Object](https://developer.android.com/guide/topics/ui/layout-objects.html)
+
+如果没有预定义的控件和布局能满足你的需求，你可以创建你自己的 View 子类。
+如果你只需要对已存在的 widget 或者 layout 做微调，你可以简单的继承当前已存的类，并且覆写相关的方法。
+
+创建你的 View 子类，你就能更精确的控制屏幕元素的外观和动作。
+关于对 view 的控制，这里有几个例子，或许能给你带来灵感：
+1.  你能创建一个完全自定义的 View 类型，例如，模仿电子控制设备，通过 2D 绘图完成的音量控制旋钮。
+2.  你能结合一系列 View 组件，完成一个组合控件，或许可以制作一个 ComboBox(下拉列表框)(文本输入控件与列表弹窗的组合)，一个二级选择控件(包含左侧和右侧两个面板，每一个面板都展示一个列表，只是一侧展示的是另一侧的子列表)，或者其他什么东西。
+3.  你能够重写 EditText 在屏幕上的显示方式([Notepad Tutorial](https://android.googlesource.com/platform/development/+/master/samples/NotePad)使用这种方式创建了效果不错的笔记页)。
+4.  你能捕获其他的事件(例如屏幕事件)并按照自己的意图处理这些事件。
+
+
 略去一小部分
 
 ## 0x02、 Fully Custom Components
@@ -24,7 +43,7 @@
 
 **有关于其中的 onMeasure().** 你的 View 和其他控件组合的时候 onMeasure() 是一个关键的部分。
 onMeasure() 应该被覆写用于准确高效的 return 其所处的 view 所包含内容的测量结果。
-要根据父控件的限制(这一限制会被传入 onMeasure())以及使用计算出的 width height 调用 setMeasureDimension() 完成对测量结果的技术这件事略微有点复杂。
+要根据父控件的限制(这一限制会被传入 onMeasure())以及使用计算出的 width height 调用 setMeasureDimension() 完成对测量结果的计数这件事略微有点复杂。
 如果你在 onMeasure() 方法中调用这个方法失败，将会在测量的时候发生异常。
 
 高水平的实现 onMeasure() 需要知道以下内容：
@@ -43,7 +62,7 @@ onMeasure() 应该被覆写用于准确高效的 return 其所处的 view 所包
 |类型|方法|描述|
 |---|----|---|
 |Creation|Constructors|当 view 使用 java 代码或者从 xml 文件中被加载的时候会调用构造方法。从 xml 文件加载 view 并调用构造方法应该解析 xml 文件中声明的属性。|
-||onFinishInflate()|当一个 view 和它是所有子 view 被加载完成的时候将会北调调用。|
+||onFinishInflate()|当一个 view 和它是所有子 view 被加载完成的时候将会被调用。|
 |Layout|onMeasure(int,int)|为 view 本身和它是子 view 所调用的请求 view 尺寸的方法|
 ||onLayout(boolean,in,int,int,int)|当 view 应该为它是子 view 提供尺寸和位置的时候调用|
 ||onSizeChanged(int,int,int,int)|当当前view 的 尺寸发生改变的时候调用|
@@ -102,5 +121,5 @@ onMeasure() 应该被覆写用于准确高效的 return 其所处的 view 所包
 如果你还没有准备着手去做，导入 NotePad 到 AndroidStudio(或许看一下它的源码)。
 特别注意，在 NoteEditor.java 文件定义的 LinedEditText 。
 
-接下来介绍该想笔记本项目。
+接下来介绍该笔记本项目。
 略...
