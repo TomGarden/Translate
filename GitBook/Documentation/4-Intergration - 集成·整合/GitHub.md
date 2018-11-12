@@ -28,6 +28,7 @@ GitBook 为与 GitHub 双向集成提供支持：在 GitBook 编辑的内容可�
 默认的，GitBook 仅支持 `master` branch。
 在设置的时候，可以也选择其他 branch 。
 在所选定的 branch 中的每一次新的 commit 都会被作为一个特定的 GitBook 版本导入:
+
 ![2018-09-10-Link_your_GitHub_repository.png](/GitBook/Image/2018-09-10-Link_your_GitHub_repository.png)
 
 你可以使用模式匹配 branch。
@@ -125,6 +126,7 @@ redirects:
 ### 5.3、 我的 repository 没有列出来？
 如果你没有看到你在 GitHub 可以访问的 repositories ，像你所处的组织的 repositories ，可一在 GitHub 查看 [GitBook OAuth application settings page](https://github.com/settings/connections/applications/c9c25e33d347c9b960e3)
 只需要简单的点击你将会被授予(或请求) GitBook OAuth app 访问你的 repositories 。
+
 ![2018-09-10_GitBook_OAuth_application_settings_page.png](/GitBook/Image/2018-09-10_GitBook_OAuth_application_settings_page.png)
 
 ## 0x06、 Limitations 限制
