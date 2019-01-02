@@ -52,3 +52,40 @@ Android 包含根据不同的动画类型所依赖的不同的动画 API，所�
 -   [Spring Animation](https://developer.android.com/guide/topics/graphics/spring-animation.html)
 -   [Fling Animation](https://developer.android.com/guide/topics/graphics/fling-animation.html)
 
+不基于物理的动画(例如构建 ObjectAnimatior 的 API )，相当于是在一定的时间段内是静态的。
+如果目标值发生变化，你需要在值变化的时候取消动画，并且重新配置动画的起始值和目标值。
+视觉上，动画有一个突兀(abrupt)的停止和一个后续不连贯的动作，如图 Figure 3。
+
+然而，基于物理动画 API 构建的动画(例如 DynamicAnimation)是由力驱动的。
+目标值的变化仿佛是在一种变化的外力下发生的。
+新的力施加于已经存在的速度，造成了目标值的持续变化。
+这个程序的结果看起来更自然，如图 Figure 4。
+
+## 0x03、 Animate layout changes
+
+![Figure 5. 展示了不论是布局更改还是启动新的 activity 都可以通过动画来完成](/Android_Dev/GUIDES/Images/2018-11-13_layout-transition.gif)
+
+在 Android 4.4 (API level 19) 或和更高的版本，当你从当前 Activity 或者 Fragment 变换布局的时候，你能使用转框架创建动画。
+有关于此你所需要做的仅仅是指定开始和目标布局，以及指定所适用的动画类型。
+你能使用这种方式变换整个 UI 或者移动/替换某个 view 。
+
+例如，用户点击一个 item 要查看更多信息的时候，你能通过类似 figure 5 的变化完成布局的替换。
+
+开始和目标布局存储在一个 `Scene` 中，`Scene` 中的开始布局通常自动设置为当前布局。
+然后你创建一个 `Transition` 告诉系统你希望的动画类型，最后调用 `TransitionManager.go()` ,系统就会使用指定动画的方式完成指定布局间的切换。
+
+有关于此的更多信息可以阅读 [Animate Between Layout Using a Transition](https://developer.android.com/training/transitions/index.html)。
+如果要查看示例代码： [BasicTransition](https://github.com/googlesamples/android-BasicTransition)
+
+## 0x04、 Animate between activities
+在 Android 5.0(API level 21) 以及更高的版本，你也能创建 Activity 的切换动画。
+这是基于与[animate layout changes]相同的变换(transition:变换;过渡)框架，但是它允许你在不相关的 Activity 之间添加动画完成切换。
+
+你能使用简单的动画(例如从一边开始滑动或者淡入淡出)，也可以通过所有 Activity 的共享视图完成动画创建。
+例如，当用户点击一个 item 要查看更多信息，你能通过一个类似于 item 在不断长大(到全屏)的过渡动画完成一个 view 到一个 Activity 的切换，例如 figure 5 。
+
+通常你会调用 startActivity() ,但是要使用动画需要通过 ActivityOptions.makeSceneTransitionAnimation() 传递一个携带动画参数的 bundle 。
+这个 bundle 包含和目标 activity 共享的 view ，通过这个信息变换(transition:变换;过渡)框架能在动画中将 view 和 activity 连贯起来。
+
+有关于此要查看更多的信息 [Strat an Activity with an Animation](https://developer.android.com/training/transitions/start-activity.html)
+关于示例代码：[ActivitySceneTransitionBasic](https://github.com/googlesamples/android-ActivitySceneTransitionBasic)

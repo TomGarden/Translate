@@ -11,7 +11,7 @@ ViewGroup 特别关心当前持有的触摸事件，因为 ViewGroup 通常持�
 
 每当 ViewGroup 或者其子 View 发生触摸事件的时候 `onInterceptTouchEvent()` 就会被调用。 如果 `onInterceptTouchEvent()` return true，代表 MotionEvent 被拦截了，未传递给子 View 而是交由父控件的 onTouchEvent() 处理。
 
-父控件通过 `onInterceptTouchEvent()` 方法可以在子控件之前检查任何触摸事件。 如果本方法 return true 表示之前处理事件的子 view 讲收到一个 ACTION_CANCEL 信号，并且从该时间点开始之后的事件会被发送到父 view 的 oTouchEvent() 方法进行常规处理。 onInterceptTouchEvent() 也能return false ，事件经过简单的检查被传送到他们通常的目标处，在哪里这些事件将会在各自的 onTouchEvent() 中被处理。
+父控件通过 `onInterceptTouchEvent()` 方法可以在子控件之前检查任何触摸事件。 如果本方法 return true 表示之前处理事件的子 view 将收到一个 ACTION_CANCEL 信号，并且从该时间点开始之后的事件会被发送到父 view 的 oTouchEvent() 方法进行常规处理。 onInterceptTouchEvent() 也能return false ，事件经过简单的检查被传送到他们通常的目标处，在哪里这些事件将会在各自的 onTouchEvent() 中被处理。
 
 在下文的代码片段中， `MyViewGroup` 集成 ViewGroup 。 `MyViewGroup` 包含多个子 view。如果你在屏幕上通过手指水平拖动一个子控件，子控件将不在接收触摸事件，MyViewGroup 应该通过滚动其中的内容处理该事件。然而，如果你按子视图中的按钮，或者垂直滚动子视图，父视图将不会拦截触摸事件，因为子视图是预定目标。在这种情况下 onInterceptTouchEvent() 应该 return false 。并且 MyViewGroup 的 onTouchEvent() 不会被调用。
 ```java
