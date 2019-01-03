@@ -2,12 +2,12 @@
 
 ## 一、 个人信息
 
-- 姓名	:	杨铭(♂)	
-- 手机/微信	:	17611261931	
-- 邮箱	:	[tom.work@foxmail.com](mailto:tom.work@foxmail.com)	
-- 翻译	:	[tom.gitbook.io](https://tom.gitbook.io)
-- GitHub	:	[github.com/TomGarden](https://github.com/TomGarden/Tetris/releases)
-- 年久失修的CSDN	:	[blog.csdn.net/u014587769](https://blog.csdn.net/u014587769)
+- 姓名: 杨铭(♂)	
+- 手机/微信: 17611261931	
+- 邮箱: [tom.work@foxmail.com](mailto:tom.work@foxmail.com)	
+- 翻译 GFW: [tom.gitbook.io](https://tom.gitbook.io)
+- GitHub: [github.com/TomGarden](https://github.com/TomGarden/Tetris/releases)
+- 年久失修的CSDN: [blog.csdn.net/u014587769](https://blog.csdn.net/u014587769)
 
 ## 二、 主要经历
 
@@ -48,7 +48,7 @@
 ## 三、 专业技能
 
 ### 3.1、 English
-- 英语读、写能力一般，[我的一点翻译](https://tom.gitbook.io)
+- 英语读、写能力一般，[我的一点翻译 GFW](https://tom.gitbook.io)
 
 ### 3.2、 关于研发
 - 读 书/AOSP/GitHub Code : [草图笔记](https://github.com/TomGarden/Translate/tree/master/About/Read_AOSP_PNG)。

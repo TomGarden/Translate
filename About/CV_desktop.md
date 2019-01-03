@@ -5,7 +5,7 @@
 <table >
     <tr>
         <td>姓名</td><td>:</td><td>杨铭(♂)</td>
-        <td>翻译</td><td>:</td><td><a href="https://tom.gitbook.io">tom.gitbook.io</a></td>
+        <td>翻译 GFW</td><td>:</td><td><a href="https://tom.gitbook.io">tom.gitbook.io</a></td>
     </tr>
     <tr>
         <td>手机/微信</td><td>:</td><td>17611261931</td>
@@ -56,7 +56,7 @@
 ## 三、 专业技能
 
 ### 3.1、 English
-- 英语读、写能力一般，[我的一点翻译](https://tom.gitbook.io)
+- 英语读、写能力一般，[我的一点翻译 GFW](https://tom.gitbook.io)
 
 ### 3.2、 关于研发
 - 读 书/AOSP/GitHub Code : [草图笔记](https://github.com/TomGarden/Translate/tree/master/About/Read_AOSP_PNG)。
