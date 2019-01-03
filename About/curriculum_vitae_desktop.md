@@ -21,7 +21,8 @@
 
 ### 2.1、 `2017.07.07~2018.07.09` [北京云测信息技术有限公司·安全事业部](https://sec-console.testin.cn/scan/list.htm)
 
-- **重度参与&实施**      
+- **重度参与&实施**
+
     1. 移动安全扫描 : 维护相关检测点(80%)的检测原理与检测细节，并输出检测方法白皮书。
         - 协助加速移动安全扫描引擎的研发速度和效率。
         - 为安全渗透测试的 Android 客户端检测提供技术支持，提高原有 Android 客户端渗透测试结果的准确性。      
@@ -58,7 +59,7 @@
 ### 3.2、 关于研发
 - 读 书/AOSP/GitHub Code : [草图笔记](https://github.com/TomGarden/Translate/tree/master/About/Read_AOSP_PNG)。
     - 选择性阅读《Android源代码情境分析》并有所实践。
-    - 读 Code : 最后认真阅读并模仿的 GitHub 项目 [Colorful](https://github.com/garretyoder/Colorful) 、 [app-theme-engine](https://github.com/garretyoder/app-theme-engine)
+    - 最近认真阅读并模仿的 GitHub 项目 [Colorful](https://github.com/garretyoder/Colorful) 、 [app-theme-engine](https://github.com/garretyoder/app-theme-engine)
 - 设计模式 : 观察者模式 、 装饰者模式 、 工厂模式 、 单例模式 。 
 
 ### 3.2、 Android

@@ -51,8 +51,9 @@
 ### 3.2、 关于研发
 - 读 书/AOSP/GitHub Code : [草图笔记](https://github.com/TomGarden/Translate/tree/master/About/Read_AOSP_PNG)。
     - 选择性阅读《Android源代码情境分析》并有所实践。
-    - 读 Code : 最后认真阅读并模仿的 GitHub 项目 [Colorful](https://github.com/garretyoder/Colorful) 、 [app-theme-engine](https://github.com/garretyoder/app-theme-engine)
+    - 最近认真阅读并模仿的 GitHub 项目 [Colorful](https://github.com/garretyoder/Colorful) 、 [app-theme-engine](https://github.com/garretyoder/app-theme-engine)
 - 设计模式 : 观察者模式 、 装饰者模式 、 工厂模式 、 单例模式 。 
+
 
 ### 3.2、 Android
 1. 从独立完成首个 Android app(2014年底) 至今，一直围绕 Android 成长 (不论是 Android 研发，Android 应用扫描，安全渗透测试)。
