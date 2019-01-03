@@ -11,6 +11,8 @@
 
 ## 二、 主要经历
 
+从独立完成首个 Android app(2014年底) 至今，一直围绕 Android 成长 (不论是 Android 研发，Android 应用扫描，安全渗透测试)。
+
 ### 2.1、 [北京云测信息技术有限公司·安全事业部](https://sec-console.testin.cn/scan/list.htm)
 - `2017.07.07~2018.07.09`
 - **重度参与&实施**
@@ -44,8 +46,6 @@
     - 2015 华北五省及港澳台大学生计算机应用大赛本科组三等奖
 
 ## 三、 专业技能
-
-从独立完成首个 Android app(2014年底) 至今，一直围绕 Android 成长 (不论是 Android 研发，Android 应用扫描，安全渗透测试)。
 
 ### 3.1、 English
 - 英语读、写能力一般，[我的一点翻译](https://tom.gitbook.io)
