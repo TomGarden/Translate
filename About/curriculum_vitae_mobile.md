@@ -4,43 +4,37 @@
 
 ## 一、 个人信息
 
-<table >
-    <tr>
-        <td>姓名</td><td>:</td><td>Tom(♂)</td>
-        <td>翻译</td><td>:</td><td><a href="https://tom.gitbook.io">tom.gitbook.io</a></td>
-    </tr>
-    <tr>
-        <td>手机/微信</td><td>:</td><td>17611261931</td>
-        <td>GitHub</td><td>:</td><td><a href="https://github.com/TomGarden/Tetris/releases">github.com/TomGarden</a></td>
-    </tr>
-    <tr>
-        <td>邮箱</td><td>:</td><td><a href="mailto:tom.work@foxmail.com">tom.work@foxmail.com</a></td>
-        <td>年久失修的CSDN</td><td>:</td><td><a href="https://blog.csdn.net/u014587769">blog.csdn.net/u014587769</a></td>
-    </tr>
-</table>
+- 姓名	:	杨铭(♂)	
+- 手机/微信	:	17611261931	
+- 邮箱	:	tom.work@foxmail.com	
+- 翻译	:	tom.gitbook.io
+- GitHub	:	[github.com/TomGarden](https://github.com/TomGarden/Tetris/releases)
+- 年久失修的CSDN	:	blog.csdn.net/u014587769
+
 
 ## 二、 主要经历
 
-### 2.1、 `2017.07.07~2018.07.09` [北京云测信息技术有限公司·安全事业部](https://sec-console.testin.cn/scan/list.htm)
-
+### 2.1、 [北京云测信息技术有限公司·安全事业部](https://sec-console.testin.cn/scan/list.htm)
+- `2017.07.07~2018.07.09`
 - **重度参与&实施**      
     1. 移动安全扫描 : 维护相关检测点(80%)的检测原理与检测细节，并输出检测方法白皮书。
         - 协助加速移动安全扫描引擎的研发速度和效率。
-        - 为安全渗透测试的 Android 客户端检测提供技术支持，提高原有 Android 客户端渗透测试结果的准确性。        
+        - 为安全渗透测试的 Android 客户端检测提供技术支持，提高原有 Android 客户端渗透测试结果的准确性。      
+
     2. 安全渗透测试 : 实施针对 Web/Android/iOS 的全面渗透测试工作。
         - 此为部门的支柱型盈利服务。
 
 - **学习性参与** Android 加固
 
-### 2.2、 `2016.11~2017.03` [北京梦天门科技股份有限公司·产品研发部](http://www.mtm2000.net/page/index.jsp)
-
+### 2.2、 [北京梦天门科技股份有限公司·产品研发部](http://www.mtm2000.net/page/index.jsp)
+- `2016.11~2017.03`
 - **重度参与&实施** Android 研发 : 独立完成阅读类 App “法律法规” 的 Android 客户端研发(含服务端接口)，并交付。
     - 为移动执法手机终端提供功能性支持。
 
 - **轻度参与&实施** Web研发 : 为北京某医院研发医患管理系统。
 
-### 2.3、 `2014.08-2016.10` [河北北方学院·河北省人口健康信息化工程技术研究中心·移动互联研究室](http://kyc.hebeinu.edu.cn/webPage/showarticle1024.html)
-
+### 2.3、 [河北北方学院·河北省人口健康信息化工程技术研究中心·移动互联研究室](http://kyc.hebeinu.edu.cn/webPage/showarticle1024.html)
+- `2014.08-2016.10`
 1. 完成导师布置的研发任务。
 2. _如有余力_ 参加各类大学生信息技术赛事。
 3. _如再有余力_ 外包。
