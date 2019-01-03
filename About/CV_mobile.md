@@ -1,4 +1,4 @@
-## <center>Android 研发</center>
+## Android 研发
 
 ## 一、 个人信息
 
@@ -45,6 +45,8 @@
 
 ## 三、 专业技能
 
+从独立完成首个 Android app(2014年底) 至今，一直围绕 Android 成长 (不论是 Android 研发，Android 应用扫描，安全渗透测试)。
+
 ### 3.1、 English
 - 英语读、写能力一般，[我的一点翻译](https://tom.gitbook.io)
 
@@ -54,21 +56,18 @@
     - 最近认真阅读并模仿的 GitHub 项目 [Colorful](https://github.com/garretyoder/Colorful) 、 [app-theme-engine](https://github.com/garretyoder/app-theme-engine)
 - 设计模式 : 观察者模式 、 装饰者模式 、 工厂模式 、 单例模式 。 
 
-
-### 3.2、 Android
-1. 从独立完成首个 Android app(2014年底) 至今，一直围绕 Android 成长 (不论是 Android 研发，Android 应用扫描，安全渗透测试)。
-2. 曾有使用过的 Android 技术点
-    - 熟悉手机硬件蓝牙， 网卡等模块的调用。
-    - 熟练掌握 2D 绘图， 熟悉 3D 绘图。
-    - 熟练掌握 Android 四大组件、 Fragment、 SrufaceView 等常见控件。
-    - 熟练掌握多线程编程和线程间的通信机制 Handler、 Message、 MessageQueue、 Lopper 的使用， 并了解其原理。
-    - 熟练掌握 Android UI 布局、 自定义 View、 动画特效的实现， 并了解 View 加载原理。
-    - 熟练掌握 ListView 的使用和优化， 提高其使用效率。
-    - 熟练掌握 AsyncTask 框架使用， 图片三级缓存机制。
-    - 熟练掌握 Android 五种文件存储方式的使用。
-    - 熟练掌握 Socket 通信， TCP、 UDP 通信协议的使用， 了解 Http 通信协议的使用。
-    - 熟悉三方 SDK： Volley， ZXing， Jsoup， Vitamio， 可快速上手三方 SDK。
-    - 熟练掌握 Android 手机屏幕适配方式和原理。
+### 3.2、 Android 曾有使用过的 Android 技术点
+- 手机硬件蓝牙， 网卡等模块的调用。
+- 2D 绘图， 熟悉 3D 绘图。
+- Android 四大组件、 Fragment、 SrufaceView 等常见控件。
+- 多线程编程和线程间的通信机制 Handler、 Message、 MessageQueue、 Lopper 的使用， 并了解其原理。
+- Android UI 布局、 自定义 View、 动画特效的实现， 并了解 View 加载原理。
+- ListView 的使用和优化， 提高其使用效率。
+- AsyncTask 框架使用， 图片三级缓存机制。
+- Android 五种文件存储方式的使用。
+- Socket 通信， TCP、 UDP 通信协议的使用， 了解 Http 通信协议的使用。
+- 三方 SDK： Volley， ZXing， Jsoup， Vitamio， 可快速上手三方 SDK。
+- Android 手机屏幕适配方式和原理。
 
 ### 3.2、 JavaWeb
 - 熟练掌握 Java 多线程和线程池的使用。
