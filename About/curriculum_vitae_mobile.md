@@ -1,6 +1,4 @@
-## Android 研发个人简历
-
-**手机横屏/电脑阅读效果更佳**
+## Android 研发
 
 ## 一、 个人信息
 
@@ -51,8 +49,10 @@
 - 英语读、写能力一般，[我的一点翻译](https://tom.gitbook.io)
 
 ### 3.2、 关于研发
-设计模式 : 观察者模式 、 装饰者模式 、 工厂模式 、 单例模式 。 
-读书 : 选择性阅读《Android源代码情境分析》并有所实践。[两张草图]()
+- 读 书/AOSP/GitHub Code : [草图笔记](https://github.com/TomGarden/Translate/tree/master/About/Read_AOSP_PNG)。
+    - 选择性阅读《Android源代码情境分析》并有所实践。
+    - 读 Code : 最后认真阅读并模仿的 GitHub 项目 [Colorful](https://github.com/garretyoder/Colorful) 、 [app-theme-engine](https://github.com/garretyoder/app-theme-engine)
+- 设计模式 : 观察者模式 、 装饰者模式 、 工厂模式 、 单例模式 。 
 
 ### 3.2、 Android
 1. 从独立完成首个 Android app(2014年底) 至今，一直围绕 Android 成长 (不论是 Android 研发，Android 应用扫描，安全渗透测试)。
@@ -128,3 +128,5 @@
   - 手机和电脑在同一局域网内完成手机对电脑的操作。 Android 端通过部署在 Windows 客户端的软件达到控制电脑的目的。
 - 技术细节
   - Socket 通信， 通过手机和电脑间的通信完成相互控制的目的。
+
+## END
