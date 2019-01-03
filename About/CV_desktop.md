@@ -19,7 +19,7 @@
 
 ## 二、 主要经历
 
-从独立完成首个 Android app(2014年底) 至今，一直围绕 Android 成长 (不论是 Android 研发，Android 应用扫描，安全渗透测试)。
+从独立完成首个 Android app(2014年) 至今，一直围绕 Android 成长 (不论是 Android 研发，Android 应用扫描，安全渗透测试)。
 
 ### 2.1、 `2017.07.07~2018.07.09` [北京云测信息技术有限公司·安全事业部](https://sec-console.testin.cn/scan/list.htm)
 
