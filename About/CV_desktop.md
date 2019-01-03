@@ -1,4 +1,4 @@
-## Android 研发
+## <center>Android 研发</center>
 
 ## 一、 个人信息
 
