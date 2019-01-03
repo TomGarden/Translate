@@ -6,11 +6,10 @@
 
 - 姓名	:	杨铭(♂)	
 - 手机/微信	:	17611261931	
-- 邮箱	:	tom.work@foxmail.com	
-- 翻译	:	tom.gitbook.io
+- 邮箱	:	[tom.work@foxmail.com](mailto:tom.work@foxmail.com)	
+- 翻译	:	[tom.gitbook.io](https://tom.gitbook.io)
 - GitHub	:	[github.com/TomGarden](https://github.com/TomGarden/Tetris/releases)
-- 年久失修的CSDN	:	blog.csdn.net/u014587769
-
+- 年久失修的CSDN	:	[blog.csdn.net/u014587769](https://blog.csdn.net/u014587769)
 
 ## 二、 主要经历
 
@@ -52,7 +51,6 @@
 
 ### 3.2、 关于研发
 设计模式 : 观察者模式 、 装饰者模式 、 工厂模式 、 单例模式 。 
-
 
 ### 3.2、 Android
 1. 从独立完成首个 Android app(2014年底) 至今，一直围绕 Android 成长 (不论是 Android 研发，Android 应用扫描，安全渗透测试)。
