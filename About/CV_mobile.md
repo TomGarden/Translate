@@ -11,7 +11,7 @@
 
 ## 二、 主要经历
 
-从独立完成首个 Android app(2014年) 至今，一直围绕 Android 成长 (不论是 Android 研发，Android 应用扫描，安全渗透测试)。
+`2014 ~ 至今`，一直围绕 Android 成长 (不论是 Android 研发，Android 应用扫描，渗透测试)。
 
 ### 2.1、 [北京云测信息技术有限公司·安全事业部](https://sec-console.testin.cn/scan/list.htm)
 - `2017.07.07~2018.07.09`
@@ -56,7 +56,7 @@
     - 最近阅读并模仿的 GitHub 项目 [Colorful](https://github.com/garretyoder/Colorful) 、 [app-theme-engine](https://github.com/garretyoder/app-theme-engine)
 - 设计模式 : 观察者模式 、 装饰者模式 、 工厂模式 、 单例模式 。 
 
-### 3.2、 Android 曾有使用过的 Android 技术点
+### 3.2、 Android 曾使用过的 Android 技术
 - 手机硬件蓝牙， 网卡等模块的调用。
 - 2D 绘图， 熟悉 3D 绘图。
 - Android 四大组件、 Fragment、 SrufaceView 等常见控件。
@@ -68,6 +68,7 @@
 - Socket 通信， TCP、 UDP 通信协议的使用， 了解 Http 通信协议的使用。
 - 三方 SDK： Volley， ZXing， Jsoup， Vitamio， 可快速上手三方 SDK。
 - Android 手机屏幕适配方式和原理。
+- ···
 
 ### 3.2、 JavaWeb
 - 熟练掌握 Java 多线程和线程池的使用。
