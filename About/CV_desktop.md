@@ -75,7 +75,7 @@
 - 设计模式 : 观察者模式 、 装饰者模式 、 工厂模式 、 单例模式 。 
 - 对安全、加固、逆向、自动化测试有一定的理解。
 
-### 3.2、 Android 熟悉的&用过的 API
+### 3.2、 Android
 1. 熟悉四大组件 : Activity、ContentProvider、BroadCast、Service。
 2. 熟悉常用组件控件与UI布局 : Intent、Fragment、ConstraintLayout、ListView、Dialog。
 3. 熟悉多线程编程和线程间的通信机制 Handler、 Message、 MessageQueue、 Lopper 的使用。
