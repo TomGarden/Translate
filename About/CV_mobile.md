@@ -65,20 +65,22 @@
     - 选择性阅读《Android源代码情境分析》并有所实践。
     - 最近阅读并模仿的 GitHub 项目 [Colorful](https://github.com/garretyoder/Colorful) 、 [app-theme-engine](https://github.com/garretyoder/app-theme-engine)
 - 设计模式 : 观察者模式 、 装饰者模式 、 工厂模式 、 单例模式 。 
+- 对安全、加固、逆向、自动化测试有一定的理解。
 
-### 3.2、 曾使用过的 Android 技术
-- 手机硬件蓝牙， 网卡等模块的调用。
-- 2D 绘图， 熟悉 3D 绘图。
-- Android 四大组件、 Fragment、 SrufaceView 等常见控件。
-- 多线程编程和线程间的通信机制 Handler、 Message、 MessageQueue、 Lopper 的使用， 并了解其原理。
-- Android UI 布局、 自定义 View、 动画特效的实现， 并了解 View 加载原理。
-- ListView 的使用和优化， 提高其使用效率。
-- AsyncTask 框架使用， 图片三级缓存机制。
-- Android 五种文件存储方式的使用。
-- Socket 通信， TCP、 UDP 通信协议的使用， 了解 Http 通信协议的使用。
-- 三方 SDK： Volley， ZXing， Jsoup， Vitamio， 可快速上手三方 SDK。
-- Android 手机屏幕适配方式和原理。
-- ···
+### 3.2、 Android 熟悉的&用过的 API
+1. 熟悉四大组件 : Activity、ContentProvider、BroadCast、Service。
+2. 熟悉常用组件控件与UI布局 : Intent、Fragment、ConstraintLayout、ListView、Dialog。
+3. 熟悉多线程编程和线程间的通信机制 Handler、 Message、 MessageQueue、 Lopper 的使用。
+4. 熟悉控件联动、自定义控件、事件分发、手势拦截与处理并多有实践。
+5. 熟悉 SVG、属性动画、图片处理、2D绘图并对 3D 绘图曾有所应用。
+6. 熟悉文件存储、XML、SQLite/ContentProvider、网络、文件。
+7. 熟悉 HTTP 网络通信、Socket 通信。
+8. 在项目中应用过蓝牙、网卡、摄像头……等硬件和传感器。
+9. 熟悉屏幕适配以及 Android 主题模块的业务逻辑。
+10. 熟悉阅读 Android 源代码的方式并有所实践 :
+    - [读过关于 init/zygote/system 进程的启动流程的部分源码](https://raw.githubusercontent.com/TomGarden/Translate/master/About/Read_AOSP_PNG/Android_源代码阅读_流程图_Zygote进程启动流程及细节_[Viso].png)
+    - [结合主题定制功能阅读过 Activity 启动流程相关的部分源码](https://raw.githubusercontent.com/TomGarden/Translate/master/About/Read_AOSP_PNG/Activity启动流程[Viso编辑].png)
+11. 具备独立开发能力，能独立分析并解决常见客户端崩溃和异常问题。
 
 ### 3.2、 JavaWeb
 - 了解 JavaWeb 的相关基础知识 jsp， html， EL， jquery， Maven， Hibernate， SpringMVC， 并有初步的运用。
@@ -96,7 +98,7 @@
   - 属性动画： 游戏细节动画，SVG 按钮动画。
   - 主题: 主题控制和定制
 - 项目地址
-  - https://github.com/TomGarden/Tetris/releases
+  - https://github.com/TomGarden/Tetris/releases/download/1.1/Tetris.apk
 
 ### 4.2、 法律法规(Android)
 - `2016.11-2017.1` - 独立开发（含服务端接口）
