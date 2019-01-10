@@ -142,6 +142,26 @@ JProfiler 支持两种模式。
 增加 VM 参数是常见的被集成向导使用的方式，IDE 插件和会话配置会将 JVM 和 JProfiler 一同启动。
 可以附加到本地程序或者通过 SSH 附加到远程程序。
 
-**-agentpath VM parameter**
+2.2.1、 **-agentpath VM parameter**
 
-理解 VM 参数如何
+理解 VM 参数如何性能分析组件是有用的。
+`-agentpath` 是一个常用的 VM 设置参数，用于使用 JVMTI 加载任何类型的本地库。
+因为性能分析接口 JVMTI 是本地接口，性能分析代理必须是一个本地库。
+这意味着你只能在[被支持的平台](https://www.ej-technologies.com/products/jprofiler/featuresPlatforms.html)完成性能分析。
+32/64位的 JVM 也需要不同的本地库。
+Java 代理也可以通过 `-javaagent` VM 参数进行加载，这种时候它的功能会受到一定限制。
+
+在 `-agentpath:` 之后附加库的绝对路径。
+还有一个等价参数 `-agentlib` 用于指定特定平台的库名称，但是你必须确保库包含在路径中。
+指定定库路径后，你能增加等于号然后增加其他代理选项，注意用逗号分隔。
+例如在 Linux ，整个参数像这样：    
+
+`-agentpath:/opt/jprofiler10/bin/linux-x64/libjprofilerti.so=port=8849,nowait`
+
+_烦啦_ 本小节后文略。
+
+2.2.2、 **启动本地会话**
+
+像 IDE 中的 “Run configurations” ,你能配置启动本地会话的文件夹夹。
+你指定 main class 所在的文件夹 VM 参数和属性 JProfiler 会为你启动会话。
+附带的演示会话都是本地启动的会话。
