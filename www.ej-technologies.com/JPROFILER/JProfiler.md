@@ -162,6 +162,22 @@ _烦啦_ 本小节后文略。
 
 2.2.2、 **启动本地会话**
 
+> Session > New Session 
+
 像 IDE 中的 “Run configurations” ,你能配置启动本地会话的文件夹夹。
-你指定 main class 所在的文件夹 VM 参数和属性 JProfiler 会为你启动会话。
+你指定 main class 所在的文件夹 VM 参数和属性, JProfiler 会为你启动会话。
 附带的演示会话都是本地启动的会话。
+
+一个特殊的启动模式是 "Wet Start" ，在这里你选定一个 `.jnlp` 文件的 URL ，JProfiler 会启动 JVM 并且对其进行性能分析。
+
+本地启动会话能通过转换引导被转化为标准会话:`Session->Conversion Wizards`。
+转换应用会话到远程会话只需创建一个启动启动 Java 的脚本并在其中增加 `-agentpath` VM 参数。
+
+远程转本地：略
+
+2.2.3、 **集成引导**
+JProfiler 的集成引导持有诸多知名三方合作者的启动脚本或者配置文件(用于修改程序增加额外 VM 参数)。
+对一些产品来说，当 VM 属性被作为参数或者环境变量的时候，启动脚本能被生成。
+
+
+2.2.4、 **IDE 集成**

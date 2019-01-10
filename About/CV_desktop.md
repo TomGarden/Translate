@@ -75,7 +75,7 @@
 - 设计模式 : 观察者模式 、 装饰者模式 、 工厂模式 、 单例模式 。 
 - 对安全、加固、逆向、自动化测试有一定的理解。
 
-### 3.2、 Android
+### 3.3、 Android
 1. 熟悉四大组件 : Activity、ContentProvider、BroadCast、Service。
 2. 熟悉常用组件控件与UI布局 : Intent、Fragment、ConstraintLayout、ListView、Dialog。
 3. 熟悉多线程编程和线程间的通信机制 Handler、 Message、 MessageQueue、 Lopper 的使用。
@@ -90,7 +90,7 @@
     - [结合主题定制功能阅读过 Activity 启动流程相关的部分源码](https://raw.githubusercontent.com/TomGarden/Translate/master/About/Read_AOSP_PNG/Activity启动流程[Viso编辑].png)
 11. 具备独立开发能力，能独立分析并解决常见客户端崩溃和异常问题。
 
-### 3.2、 JavaWeb
+### 3.4、 JavaWeb
 - 了解 JavaWeb 的相关基础知识 jsp， html， EL， jquery， Maven， Hibernate， SpringMVC， 并有初步的运用。
 - 可独立完成接口开发。
 
