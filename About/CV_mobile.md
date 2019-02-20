@@ -1,4 +1,4 @@
-## Android 研发 · [![desktop](/About/Images/desktop.png)](/About/CV_desktop.md) · [![mobile](/About/Images/mobile.png)](/About/CV_mobile.md) · [![download](/About/Images/download.png)](https://raw.githubusercontent.com/TomGarden/Translate/master/About/SRC/Android研发-杨铭.pdf)    
+## Android 研发 杨铭 · [![desktop](/About/Images/desktop.png)](/About/CV_desktop.md) · [![mobile](/About/Images/mobile.png)](/About/CV_mobile.md) · [![download](/About/Images/download.png)](https://raw.githubusercontent.com/TomGarden/Translate/master/About/SRC/Android研发-杨铭.pdf)    
 
 ## 一、 个人信息
 
@@ -14,7 +14,7 @@
 `2014 ~ 至今`，一直围绕 Android 成长 (不论是 Android 研发，Android 应用扫描，渗透测试)。
 
 ### 2.0、 试错·空档
-- `2018.07~2018.12` 尝试做一个独立 Android 开发者并 **受挫** 。
+- `2018.07~2018.12` 尝试做一个独立 Android 开发者 **受挫** 。
 
 ### 2.1、 [北京云测信息技术有限公司·安全事业部](https://sec-console.testin.cn/scan/list.htm)
 - `2017.07.07~2018.07.09` 
