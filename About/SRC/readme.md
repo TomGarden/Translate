@@ -5,4 +5,4 @@
     3. 网页内容或者 VSCode 预览内容复制到 WPS 格式太乱
 - 解决：
     1. 将网页内容复制到 [GoogleDoc](https://docs.google.com)
-    2. 从 GoogleDoc 到处文件内容后无需排版，只需要细节微调
+    2. 从 GoogleDoc 导出文件内容后无需排版，只需要细节微调
