@@ -89,7 +89,7 @@
     - [读过关于 init/zygote/system 进程的启动流程的部分源码](https://raw.githubusercontent.com/TomGarden/Translate/master/About/Read_AOSP_PNG/Android_源代码阅读_流程图_Zygote进程启动流程及细节_[Viso].png)
     - [结合主题定制功能阅读过 Activity 启动流程相关的部分源码](https://raw.githubusercontent.com/TomGarden/Translate/master/About/Read_AOSP_PNG/Activity启动流程[Viso编辑].png)
 11. 具备独立开发能力，能独立分析并解决常见客户端崩溃和异常问题。
-12. 了解主流框架 RxJava、Retrofit、okhttp
+12. 了解主流框架 RxJava、Retrofit、OkHttp 。
 
 ### 3.4、 JavaWeb
 - 了解 JavaWeb 的相关基础知识 jsp， html， EL， jquery， Maven， Hibernate， SpringMVC， 并有初步的运用。
