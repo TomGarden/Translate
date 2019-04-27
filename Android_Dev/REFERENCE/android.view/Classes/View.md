@@ -301,3 +301,8 @@ View 类公开 [ALPHA](https://developer.android.com/reference/android/view/View
 
 这里的每一个输入都会按顺序被考虑，首先洗出的输入内容优先于下述内容。
 换句话说，如果 AttributeSet 你已经设置了 `<Button  ***  textColor="#ff000000"` ，那么接下来 Button 中的文字将会是黑色，而不是后续主题或者风格中所指定的颜色。
+
+## 0x18 、 选择性方法译注
+
+>`public void setDrawingCacheEnabled (boolean enabled)`
+
