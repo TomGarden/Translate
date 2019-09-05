@@ -1,9 +1,9 @@
 ## 0x00、 ViewModel 概览
 
-ViewModel 被设计用于在一个 声明周期 存储和管理 UI 相关的数据 。
+ViewModel 被设计用于在一个 生命周期 存储和管理 UI 相关的数据 。
 ViewModel 类允许保留配置变化(例如屏幕旋转)。
 
-> **☆注意 :** 要在你的项目中实现 ViewModel ，请查看在[生命周期发布日志](https://developer.android.com/jetpack/androidx/releases/lifecycle#declaring_dependencies)中的声明的指南(重要)。
+> **☆注意 :** 要在你的项目中实现 ViewModel ，请查看在[生命周期发布日志](https://developer.android.com/jetpack/androidx/releases/lifecycle#declaring_dependencies)中声明的指南(重要)。
 
 Android framework 管理 UI 控制器(例如 Activity 和 Fragment)的生命周期。
 fragment 可能会决定销毁或者重建 UI 控制器从而响应用户事件(这些事件可能超出你的控制范围)。
@@ -73,10 +73,24 @@ ViewModel 对象被设作为超出视图或者生命周期的特定实例。
 ViewModel 对象能包含 `LifecycleObservers` 例如 `LiveData` 对象。
 但是，ViewModel对象绝不能观察到生命周期感知的可观察对象（例如LiveData对象）的更改。 如果ViewModel需要Application上下文，例如查找系统服务，它可以扩展AndroidViewModel类并具有在构造函数中接收Application的构造函数，因为Application类扩展了Context。
 
+## 0x03、 ViewModel 的生命周期
 
+ViewModel 对象的作用于获取 ViewModel 时传递给它的 ViewModelProvider 的生命周期。
+ViewModel 将一直驻留内存，直到其作用域永久消失为止：例如一个 Activity finish ，在 Fragment 即发生于 detacth 。
 
+下图表示了 activity 完整生命周期状态变化的时候 ViewModel 的对应状态。
+其状态在 Fragment 也是同样的道理。
 
-## 0x04、 用 ViewModel 替换 Loaders
+![2019-08-20-viewmodel-lifecycle.png](/Android_Dev/GUIDES/Images/2019-08-20-viewmodel-lifecycle.png)
+
+通常的，你需要在 Activity 的 onCreate() 回调中请求 ViewModel。 系统在生命周期中可能调用 onCreate() 多次。
+ViewModel 的存在周期为，第一期请求它，直到 activity finish 。
+
+## 0x04、 在 Fragment 之间共享数据
+
+### 暂略
+
+## 0x05、 用 ViewModel 替换 Loaders
 
 像 CursorLoader 这样的 Loader 类通常用于持有和 UI 相同步的数据。
 你能使用 ViewModel (涉及更少的类) 替换 loader 。
@@ -94,7 +108,7 @@ Room 会在 database 变化的时候通知你 LiveData，LiveData 用修改后�
 
 ![2019-04-24-viewmodel-replace-loader.png](/Android_Dev/GUIDES/Images/2019-04-24-viewmodel-replace-loader.png)
 
-### 4.1、 功能信息
+### 5.1、 功能信息
 
 当你的数据变的越来与复杂，你可能会选择用一个分离的类专门负责加载数据。
 ViewModel 的目标是为一个 UI 控制器封装这些数据，使得当配置更改的时候数据依然存在。
