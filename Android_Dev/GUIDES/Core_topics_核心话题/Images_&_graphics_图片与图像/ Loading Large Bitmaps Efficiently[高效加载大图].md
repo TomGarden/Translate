@@ -37,7 +37,7 @@ String imageType = options.outMimeType;
 
 要避免 `java.java.OutOfMemory` 异常，可在真正解码图片之前检查 bitmap 的尺寸，除非你绝对信任提供的携带可预见尺寸的图像数据资源，否则就要修正资源使打到内存可接受的程度。
 
-## 0x02、 加载所放过的图片到内存中
+## 0x02、 加载缩放过的图片到内存中
 现在待加载图片的尺寸是已知的，可以通过它决定是应该将其全部加载到内存还是加载其缩略图。
 这里是一些做这个决定所需要考虑的因素：
 -   预计加载整个图像需要占用的内存空间。
@@ -78,7 +78,7 @@ public static int calculateInSampleSize(
 >**☆NOTE：**
     使用 2 作为因子是因为解码器使用最终值通过舍入得到最接近的 2 的幂。
 
-使用这个方法，首次解码的时候 inJustDecodeBounds 设置为 true ，获取 options 值，然后使用心得 inSampleSize 对图片进行解码的时候 inJustDecodeBound 设置为 false ：
+使用这个方法，首次解码的时候 inJustDecodeBounds 设置为 true ，获取 options 值，然后使用新的 inSampleSize 对图片进行解码的时候 inJustDecodeBound 设置为 false ：
 ```java
 public static Bitmap decodeSampledBitmapFromResource(Resources res, int resId,
         int reqWidth, int reqHeight) {

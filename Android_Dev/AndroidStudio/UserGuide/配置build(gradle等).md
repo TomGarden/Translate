@@ -1,0 +1,1 @@
+[原文是中文](https://developer.android.com/studio/build)
