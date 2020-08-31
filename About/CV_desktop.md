@@ -15,6 +15,10 @@
         <td>邮箱</td><td>:</td><td><a href="mailto:tom.work@foxmail.com">tom.work@foxmail.com</a></td>
         <td>年久失修的CSDN</td><td>:</td><td><a href="https://blog.csdn.net/u014587769">blog.csdn.net/u014587769</a></td>
     </tr>
+    <tr>
+        <td></td><td></td><td></td>
+        <td>笔记</td><td>:</td><td><a href="https://github.com/TomGarden/tom-notes/issues">GitHub Issues Blog</a></td>
+    </tr>
 </table>
 
 ## 二、 主要经历

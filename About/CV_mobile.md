@@ -8,6 +8,7 @@
 - 翻译 GFW: [tom.gitbook.io](https://tom.gitbook.io)
 - GitHub: [github.com/TomGarden](https://github.com/TomGarden/Tetris/releases)
 - 年久失修的CSDN: [blog.csdn.net/u014587769](https://blog.csdn.net/u014587769)
+- 笔记 : [GitHub Issues blog](https://github.com/TomGarden/tom-notes/issues)
 
 ## 二、 主要经历
 
