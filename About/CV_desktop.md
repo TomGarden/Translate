@@ -25,7 +25,7 @@
 
 `2014 ~ 至今`，一直围绕 Android 成长 (不论是 Android 研发，Android 应用扫描，渗透测试)。
 
-### 2.1、 [北京峰群科技有限公司](https://manbanapp.com/)
+### 2.1、 [北京蜂群科技有限公司](https://manbanapp.com/)
 - `2019.03.07~至今` 
 - 独立开发、维护 「满班APP」 Android 客户端
 - 满班 : 教育行业、教务管理系统、sass
