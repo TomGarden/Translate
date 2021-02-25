@@ -26,16 +26,14 @@
 `2014 ~ 至今`，一直围绕 Android 成长 (不论是 Android 研发，Android 应用扫描，渗透测试)。
 
 ### 2.0、 [滴滴 - 北京小桔科技有限公司](https://www.didiglobal.com/) 
-- <img src="SRC/images/didi_logo.jpeg" width = "20" height = "20" />
-- `2020.11.12~至今`
+- <img src="SRC/images/didi_logo.jpeg" width = "20" height = "20" style="vertical-align:text-top" /> `2020.11.12~至今`
 - Android 研发 
 
 ### 2.1、 [北京蜂群科技有限公司](https://manbanapp.com/)
-- <img src="SRC/images/manban_fengqunkeji_logo.png" width = "16" height = "16" />
-- `2019.03.07~2020.11` 
+- <img src="SRC/images/manban_fengqunkeji_logo.png" width = "16" height = "16" style="vertical-align:text-top" /> `2019.03.07~2020.11` 
 - 独立开发、维护 「满班APP」 Android 客户端
-- 满班 : 创业公司、教育行业、教务管理系统、sass
     [下载了解](https://manbanapp.cn/)
+- 满班 : 创业公司、教育行业、教务管理系统、sass
 
 ### 2.2、 试错·空档
 - `2018.07~2018.12` 尝试做一个独立 Android 开发者 **受挫** 。

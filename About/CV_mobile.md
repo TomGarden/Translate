@@ -14,21 +14,30 @@
 
 `2014 ~ 至今`，一直围绕 Android 成长 (不论是 Android 研发，Android 应用扫描，渗透测试)。
 
-### 2.-1、 [北京蜂科技有限公司](https://manbanapp.com/)
-- `2019.03.07~至今` 
-- 独立开发、维护 「满班APP」 Android 客户端
-- 满班 : 教育行业、教务管理系统、sass
 
-### 2.0、 试错·空档
+### 2.0、 [滴滴 - 北京小桔科技有限公司](https://www.didiglobal.com/) 
+- <img src="SRC/images/didi_logo.jpeg" width = "20" height = "20" style="vertical-align:text-top" /> `2020.11.12~至今`
+- Android 研发 
+
+
+### 2.1、 [北京蜂群科技有限公司](https://manbanapp.com/)
+- <img src="SRC/images/manban_fengqunkeji_logo.png" width = "16" height = "16" style="vertical-align:text-top" /> `2019.03.07~2020.11` 
+- 独立开发、维护 「满班APP」 Android 客户端
+    [下载了解](https://manbanapp.cn/)
+- 满班 : 创业公司、教育行业、教务管理系统、sass
+
+
+### 2.2、 试错·空档
 - `2018.07~2018.12` 尝试做一个独立 Android 开发者 **受挫** 。
 
-### 2.1、 [北京云测信息技术有限公司·安全事业部](https://sec-console.testin.cn/scan/list.htm)
+
+### 2.3、 [北京云测信息技术有限公司·安全事业部](https://sec-console.testin.cn/scan/list.htm)
 - `2017.07.07~2018.07.09` 
 - **重度参与&实施**
 
     1. 移动安全扫描 : `2017.7~2017.10`
         - 维护相关检测点(80%)的检测原理与检测细节，并输出检测方法白皮书。
-        - 协助提高移动安全扫描引擎的研发速度和效率。
+        - 协助提高移动安全扫描引擎的研发(提高速度和效率)。
         - 为安全渗透测试的 Android 客户端检测提供技术支持，提高原有 Android 客户端渗透测试结果的准确性。      
         - 最终自动化检测引擎完成并上线 [♐](https://sec-console.testin.cn/scan/list.htm)。
 
@@ -39,7 +48,8 @@
 
 - **学习性参与** `17.3~17.7(业余)` Android 加固
 
-### 2.2、 (实习)[北京梦天门科技股份有限公司·产品研发部](http://www.mtm2000.net/page/index.jsp)
+
+### 2.4、 (实习)[北京梦天门科技股份有限公司·产品研发部](http://www.mtm2000.net/page/index.jsp)
 - `2016.11~2017.3`
 - **重度参与&实施** 　Android 研发 : `2016.11-2017.1`
     - 独立完成阅读类 App “法律法规” 的 Android 客户端研发(含服务端接口),为移动执法手机终端提供功能性支持。
@@ -47,7 +57,8 @@
 - **轻度参与&实施**　Web研发 : `2017.1~2017.3`
     - 为北京某医院研发医患管理系统。
 
-### 2.3、 河北北方学院
+
+### 2.5、 河北北方学院
 - `2013.9.1~2017.6.30`
 - 计算机科学与技术专业　统招本科　二批次 
     - 2016 年中国大学生计算机设计大赛二等奖
