@@ -302,7 +302,403 @@ View 类公开 [ALPHA](https://developer.android.com/reference/android/view/View
 这里的每一个输入都会按顺序被考虑，首先洗出的输入内容优先于下述内容。
 换句话说，如果 AttributeSet 你已经设置了 `<Button  ***  textColor="#ff000000"` ，那么接下来 Button 中的文字将会是黑色，而不是后续主题或者风格中所指定的颜色。
 
-## 0x18 、 选择性方法译注
+## 0x18 、 选择性译注
 
 >`public void setDrawingCacheEnabled (boolean enabled)`
 
+
+### `setSystemUiVisibility`
+
+`public void setSystemUiVisibility (int visibility)`
+
+>此函数在 API level 30. 被弃用<br/>
+>SystemUiVisibility 标志属性被弃用. 使用 WindowInsetsController 替代.
+
+请求状态栏以及其他屏幕(窗口)装饰器的变更
+
+这个函数被用于将设备 UI 设置为临时模式 , 通过对系统 UI 调整色度或者隐藏系统 UI 的能力 , 有助于用户专注于应用内容 .
+通常和 `Window.FEATURE_ACTION_BAR_OVERLAY` 相结合 , 允许应用内容放置在 action bar (或者其他系统能力的 UI 位置) 的后面 , 
+从而可以隐藏和展示他们之间的平滑过渡 .
+
+两个使用 UI 可见性的能力的代表性的例子 : 内容浏览程序,类似杂志阅读或者视频播放程序 .
+
+第一段代码展示了 在内容浏览程序中的 View 的常用实现方式 .
+在这里实现的内容为 , 应用进入阅读模式的实际做法是 : 隐藏 status bar 和 action bar , 然后将 navigation 元素置为熄灯模式 .
+然后用户在这种模式下与应用交互 .
+这样一个应用程序应该提供简单的方式退出这种模式(比如用户会需要查看 status bar 中的信息或者访问通知栏内容) .
+这种实现里 , 通过触摸应用内容科技方便简单的满足用户需求 .
+```java
+public static class Content extends ScrollView
+        implements View.OnSystemUiVisibilityChangeListener, View.OnClickListener {
+    TextView mText;
+    TextView mTitleView;
+    SeekBar mSeekView;
+    boolean mNavVisible;
+    int mBaseSystemUiVisibility = SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+            | SYSTEM_UI_FLAG_LAYOUT_STABLE;
+    int mLastSystemUiVis;
+
+    Runnable mNavHider = new Runnable() {
+        @Override public void run() {
+            setNavVisibility(false);
+        }
+    };
+
+    public Content(Context context, AttributeSet attrs) {
+        super(context, attrs);
+
+        mText = new TextView(context);
+        mText.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 16);
+        mText.setText(context.getString(R.string.alert_dialog_two_buttons2ultra_msg));
+        mText.setClickable(false);
+        mText.setOnClickListener(this);
+        mText.setTextIsSelectable(true);
+        addView(mText, new ViewGroup.LayoutParams(
+                ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+
+        setOnSystemUiVisibilityChangeListener(this);
+    }
+
+    public void init(TextView title, SeekBar seek) {
+        // This called by the containing activity to supply the surrounding
+        // state of the content browser that it will interact with.
+        mTitleView = title;
+        mSeekView = seek;
+        setNavVisibility(true);
+    }
+
+    @Override public void onSystemUiVisibilityChange(int visibility) {
+        // Detect when we go out of low-profile mode, to also go out
+        // of full screen.  We only do this when the low profile mode
+        // is changing from its last state, and turning off.
+        int diff = mLastSystemUiVis ^ visibility;
+        mLastSystemUiVis = visibility;
+        if ((diff&SYSTEM_UI_FLAG_LOW_PROFILE) != 0
+                && (visibility&SYSTEM_UI_FLAG_LOW_PROFILE) == 0) {
+            setNavVisibility(true);
+        }
+    }
+
+    @Override protected void onWindowVisibilityChanged(int visibility) {
+        super.onWindowVisibilityChanged(visibility);
+
+        // When we become visible, we show our navigation elements briefly
+        // before hiding them.
+        setNavVisibility(true);
+        getHandler().postDelayed(mNavHider, 2000);
+    }
+
+    @Override protected void onScrollChanged(int l, int t, int oldl, int oldt) {
+        super.onScrollChanged(l, t, oldl, oldt);
+
+        // When the user scrolls, we hide navigation elements.
+        setNavVisibility(false);
+    }
+
+    @Override public void onClick(View v) {
+        // When the user clicks, we toggle the visibility of navigation elements.
+        int curVis = getSystemUiVisibility();
+        setNavVisibility((curVis&SYSTEM_UI_FLAG_LOW_PROFILE) != 0);
+    }
+
+    void setBaseSystemUiVisibility(int visibility) {
+        mBaseSystemUiVisibility = visibility;
+    }
+
+    void setNavVisibility(boolean visible) {
+        int newVis = mBaseSystemUiVisibility;
+        if (!visible) {
+            newVis |= SYSTEM_UI_FLAG_LOW_PROFILE | SYSTEM_UI_FLAG_FULLSCREEN;
+        }
+        final boolean changed = newVis == getSystemUiVisibility();
+
+        // Unschedule any pending event to hide navigation if we are
+        // changing the visibility, or making the UI visible.
+        if (changed || visible) {
+            Handler h = getHandler();
+            if (h != null) {
+                h.removeCallbacks(mNavHider);
+            }
+        }
+
+        // Set the new desired visibility.
+        setSystemUiVisibility(newVis);
+        mTitleView.setVisibility(visible ? VISIBLE : INVISIBLE);
+        mSeekView.setVisibility(visible ? VISIBLE : INVISIBLE);
+    }
+}
+```
+
+第二段代码展示了在视频播放程序中的常用实现 . 
+在这种解决方案中 , 当视频播放的时候 , 应用程序要进入一个完全全屏的模式 , 从而可以尽可能多的展示视频画面 . 
+在这种情况下 , 用户不能和应用程序交互 ; 系统拦截触摸事件用于推出全屏 UI .
+查看 `fitSystemWindows(android.graphics.Rect)` 在以下例程总的应用 :
+```java
+public static class Content extends ImageView implements
+        View.OnSystemUiVisibilityChangeListener, View.OnClickListener,
+        ActionBar.OnMenuVisibilityListener {
+    Activity mActivity;
+    TextView mTitleView;
+    Button mPlayButton;
+    SeekBar mSeekView;
+    boolean mAddedMenuListener;
+    boolean mMenusOpen;
+    boolean mPaused;
+    boolean mNavVisible;
+    int mLastSystemUiVis;
+
+    Runnable mNavHider = new Runnable() {
+        @Override public void run() {
+            setNavVisibility(false);
+        }
+    };
+
+    public Content(Context context, AttributeSet attrs) {
+        super(context, attrs);
+        setOnSystemUiVisibilityChangeListener(this);
+        setOnClickListener(this);
+    }
+
+    public void init(Activity activity, TextView title, Button playButton,
+            SeekBar seek) {
+        // This called by the containing activity to supply the surrounding
+        // state of the video player that it will interact with.
+        mActivity = activity;
+        mTitleView = title;
+        mPlayButton = playButton;
+        mSeekView = seek;
+        mPlayButton.setOnClickListener(this);
+        setPlayPaused(true);
+    }
+
+    @Override protected void onAttachedToWindow() {
+        super.onAttachedToWindow();
+        if (mActivity != null) {
+            mAddedMenuListener = true;
+            mActivity.getActionBar().addOnMenuVisibilityListener(this);
+        }
+    }
+
+    @Override protected void onDetachedFromWindow() {
+        super.onDetachedFromWindow();
+        if (mAddedMenuListener) {
+            mActivity.getActionBar().removeOnMenuVisibilityListener(this);
+        }
+    }
+
+    @Override public void onSystemUiVisibilityChange(int visibility) {
+        // Detect when we go out of nav-hidden mode, to clear our state
+        // back to having the full UI chrome up.  Only do this when
+        // the state is changing and nav is no longer hidden.
+        int diff = mLastSystemUiVis ^ visibility;
+        mLastSystemUiVis = visibility;
+        if ((diff&SYSTEM_UI_FLAG_HIDE_NAVIGATION) != 0
+                && (visibility&SYSTEM_UI_FLAG_HIDE_NAVIGATION) == 0) {
+            setNavVisibility(true);
+        }
+    }
+
+    @Override protected void onWindowVisibilityChanged(int visibility) {
+        super.onWindowVisibilityChanged(visibility);
+
+        // When we become visible or invisible, play is paused.
+        setPlayPaused(true);
+    }
+
+    @Override public void onClick(View v) {
+        if (v == mPlayButton) {
+            // Clicking on the play/pause button toggles its state.
+            setPlayPaused(!mPaused);
+        } else {
+            // Clicking elsewhere makes the navigation visible.
+            setNavVisibility(true);
+        }
+    }
+
+    @Override public void onMenuVisibilityChanged(boolean isVisible) {
+        mMenusOpen = isVisible;
+        setNavVisibility(true);
+    }
+
+    void setPlayPaused(boolean paused) {
+        mPaused = paused;
+        mPlayButton.setText(paused ? R.string.play : R.string.pause);
+        setKeepScreenOn(!paused);
+        setNavVisibility(true);
+    }
+
+    void setNavVisibility(boolean visible) {
+        int newVis = SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                | SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+                | SYSTEM_UI_FLAG_LAYOUT_STABLE;
+        if (!visible) {
+            newVis |= SYSTEM_UI_FLAG_LOW_PROFILE | SYSTEM_UI_FLAG_FULLSCREEN
+                    | SYSTEM_UI_FLAG_HIDE_NAVIGATION;
+        }
+
+        // If we are now visible, schedule a timer for us to go invisible.
+        if (visible) {
+            Handler h = getHandler();
+            if (h != null) {
+                h.removeCallbacks(mNavHider);
+                if (!mMenusOpen && !mPaused) {
+                    // If the menus are open or play is paused, we will not auto-hide.
+                    h.postDelayed(mNavHider, 3000);
+                }
+            }
+        }
+
+        // Set the new desired visibility.
+        setSystemUiVisibility(newVis);
+        mTitleView.setVisibility(visible ? VISIBLE : INVISIBLE);
+        mPlayButton.setVisibility(visible ? VISIBLE : INVISIBLE);
+        mSeekView.setVisibility(visible ? VISIBLE : INVISIBLE);
+    }
+}
+```
+
+参数取值 : visibility	int: 
+二进制标记符:
+ |----------------------------------------|----------------------------------------| 
+ |----------------------------------------|----------------------------------------| 
+ | SYSTEM_UI_FLAG_LOW_PROFILE             |                                        | 
+ | SYSTEM_UI_FLAG_HIDE_NAVIGATION         |                                        | 
+ | SYSTEM_UI_FLAG_FULLSCREEN              |                                        | 
+ | SYSTEM_UI_FLAG_LAYOUT_STABLE           |                                        | 
+ | SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION  |                                        | 
+ | SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN       |                                        | 
+ | SYSTEM_UI_FLAG_IMMERSIVE               |                                        | 
+ | SYSTEM_UI_FLAG_IMMERSIVE_STICKY        |                                        | 
+
+### `SYSTEM_UI_FLAG_LOW_PROFILE`
+
+> 此内容弃用于 API level 30.<br/>
+> 低调模式被弃用 . 被隐藏系统栏动作取代 .
+> 如果应用需要进入不引人瞩目的模式 , 使用 `WindowInsetsController.hide(int)` 和 `Type.systemBars()` 完成 . 
+
+标记通过 `setSystemUiVisibility(int)` 被应用 : View 请求系统 UI 进入不引人瞩目的"低调"模式 .
+
+用于游戏/书籍阅读/视频播放 或者其他 "沉浸式" 应用(通常系统 UI 被认为过于分散注意力的应用)
+
+在低调模式下 , staturs bar 和 navigation icon 是黯淡的 . 
+
+
+### `SYSTEM_UI_FLAG_HIDE_NAVIGATION`
+
+> 此内容弃用于 API level 30.<br/>
+> 用 `WindowInsetsController.hide(int)` 和 `Type.systemBars()` 取代 . 
+
+标记通过 `setSystemUiVisibility(int)` 被应用 : View 请求系统 navigation 组件临时隐藏 . 
+
+这是比 `SYSTEM_UI_FLAG_LOW_PROFILE` 更不显眼的状态 ; 
+`SYSTEM_UI_FLAG_HIDE_NAVIGATION` 会导致系统不在屏幕上绘制基本导航控制 UI (Home / back 等按钮) .
+这用于每一个像素都展示应用内容的状况 (通常结合 window 的 `FLAG_FULLSCREEN` 使用 `FLAG_LAYOUT_IN_SCREEN`)
+
+这是一个限制 : 因为导航控制非常重要 , 任何 UI 交互动作都会导致它们重新展示出来 . 
+这种情况下 `SYSTEM_UI_FLAG_FULLSCREEN` 标记将会自动被清除 , 从而两个元素同时出现 . 
+
+
+
+### `SYSTEM_UI_FLAG_FULLSCREEN`
+
+> 此内容弃用于 API level 30.<br/>
+> 用 `WindowInsetsController.hide(int)` 和 `Type.systemBars()` 取代 . 
+
+标记通过 `setSystemUiVisibility(int)` 被应用 : 
+View 请求进入一般的全屏模式 , 以便内容可以铺满整个屏幕 , 同时允许用户继续和应用交互. 
+
+这和 `WindowManager.LayoutParams.FLAG_FULLSCREEN` 有相同的视觉效果 , 
+这个 View 所在的 window 中非关键的装饰器(例如 status bar) 将被隐藏 , 将精神聚焦在应用内容 . 
+不像 window 标记 , 如果你正在使用 ActionBar 并且使用 `Window.FEATURE_ACTION_BAR_OVERLAY` 覆盖模式 , 
+这个标记将同时隐藏 Action bar .
+
+当应用希望用户在某些情况下专注于内容 , 但是又不是期望用户持续保持如此高的专注度 , 使用这种方式是不错的选择 . 
+对于应用想要持续保持全屏状态的情况(例如想要接管屏幕的游戏) , window flat 通常是更好的实现方式 . 
+想起他的 系统 UI 状态一样 , 某些情况下(例如用户在应用程序间进行切换的时候)这里的状态标识将被系统清除 . 
+
+当使用这个标识的时候 , 应用程序应该提供一些简便的操作用于退出这种状态 . 
+一个常见的例子是 , 在电子书阅读器中 , 当用户触摸屏幕的时候系统 UI 将会出现 , 当用户再次沉浸到应用内容中的时候 , 系统 UI 就会隐藏 . 
+
+### `SYSTEM_UI_FLAG_LAYOUT_STABLE`
+
+> 此内容弃用于 API level 30.<br/>
+> 用 `WindowInsets.getInsetsIgnoringVisibility(int)` 取代 , 来检索系统栏更改可见性状态时不会更改的 insets
+
+标记通过 `setSystemUiVisibility(int)` 被应用 : 
+当使用其他布局标记的时候 , 我们想要一个具有稳定的 view 的上下文被分发给 `fitSystemWindows(android.graphics.Rect)` .
+这意味着 , 在那里插入可以预期为具有连续状态的最坏情况 . 
+在原始的系统中这适用于 system bar, nav bar, 和 status bar 但是不包含例如输入法这样的瞬时元素 . 
+用户界面看到的稳定布局基于您可以切换到的系统用户界面模式。
+就是说, 如果你指定 `SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN` 然后你
+
+
+### `SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION`
+
+> 此内容弃用于 API level 30.<br/>
+> 对于浮动窗口可以使用  `LayoutParams#setFitInsetsTypes( Type#navigationBars() )` 取代.
+> 对于非浮动窗口可以使用 `Window#setDecorFitsSystemWindows( false )` 取代
+
+标记通过 `setSystemUiVisibility(int)` 被应用 : 
+这类似于通过 `Window` 调用 `SYSTEM_UI_FLAG_HIDE_NAVIGATION` 的效果 . 
+这样可以避免在进入和退出该模式时出现伪影，其代价是在显示某些用户界面时可能会被屏幕装饰覆盖。
+您可以通过该 `fitSystemWindows(android.graphics.Rect)` 方法执行内部UI元素的布局，以解决导航系统UI的问题 。
+
+
+### `SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN`
+
+> 此内容弃用于 API level 30.<br/>
+> 对于浮动窗口 , 使用 `LayoutParams#setFitInsetsTypes( Type#statusBars() )` 替代 ;
+> 对于非浮动窗口 , 使用 `Window#setDecorFitsSystemWindows( false ) ` 替代 . 
+
+标记通过 `setSystemUiVisibility(int)` 被应用 : 
+使用此 flag 的效果类似于在 window 上设置 `SYSTEM_UI_FLAG_FULLSCREEN` .
+这样可以避免在进入和退出该模式时出现伪影，其代价是在显示某些用户界面时可能会被屏幕装饰覆盖。
+可以对内部的非全屏布局元素设置 `fitSystemWindows(android.graphics.Rect)` 以避免非全屏的系统 UI 问题 .
+
+
+
+
+
+### `SYSTEM_UI_FLAG_IMMERSIVE`
+
+> 此内容弃用于 API level 30.<br/>
+> Use `WindowInsetsController#BEHAVIOR_DEFAULT` instead.
+
+标记通过 `setSystemUiVisibility(int)` 被应用 : 
+使用 `SYSTEM_UI_FLAG_HIDE_NAVIGATION` 隐藏导航栏时，View 希望保持交互性。 
+如果未设置此标志，则系统将在任何用户交互时强制清除 `SYSTEM_UI_FLAG_HIDE_NAVIGATION。`
+因为这个标志是 `SYSTEM_UI_FLAG_HIDE_NAVIGATION` 的修饰符 , 因此只有设置了 `SYSTEM_UI_FLAG_HIDE_NAVIGATION` 此标志才生效 .
+
+
+### `SYSTEM_UI_FLAG_IMMERSIVE_STICKY`
+
+> 此内容弃用于 API level 30.<br/>
+> Use `WindowInsetsController#BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE` instead.
+
+标记通过 `setSystemUiVisibility(int)` 被应用 : 
+此标记用于使用 `SYSTEM_UI_FLAG_FULLSCREEN` 隐藏 status bar 的时候 和(或) `SYSTEM_UI_FLAG_HIDE_NAVIGATION` 隐藏 navigation bar 的时候仍然保持交互状态 . 
+使用此标志可以创建身临其境的体验，同时还隐藏系统栏。
+如果没有设置这个标志 , `SYSTEM_UI_FLAG_HIDE_NAVIGATION` 设置的 UI 状态在用户交互的时候回被强制清除 ; 
+`SYSTEM_UI_FLAG_FULLSCREEN` 设置的 UI 状态也会在从顶部向下滑动的时候被强制清除 . 
+
+当系统 UI 处于沉浸模式的时候 , 系统 UI 可以通过系统手势暂时展现出来 , 比如从顶部向下的轻扫 . 
+系统栏短暂的展现的时候将会以覆盖 App 内容的方式展现 , 可能具有一定的透明度 , 并在在短暂的展示后自动隐藏 .
+
+因为这个 标识 是对 `SYSTEM_UI_FLAG_FULLSCREEN` 和 `SYSTEM_UI_FLAG_HIDE_NAVIGATION` 的修饰 , 
+所以仅当和这些标志中的一个或两个共同使用的时候才有效果 .
+
+
+### `SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR`
+
+> 此内容弃用于 API level 30.<br/>
+> Use WindowInsetsController#APPEARANCE_LIGHT_NAVIGATION_BARS instead.
+
+### `SYSTEM_UI_FLAG_LIGHT_STATUS_BAR`
+
+> 此内容弃用于 API level 30.<br/>
+> Use WindowInsetsController#APPEARANCE_LIGHT_STATUS_BARS instead.
+
+
+### `FLAG_FULLSCREEN`
+
+### `FLAG_LAYOUT_IN_SCREEN`

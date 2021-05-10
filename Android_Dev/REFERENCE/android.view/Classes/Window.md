@@ -58,6 +58,9 @@ public static final int **FLAG_TRANSLUCENT_STATUS**
     -   `View#SYSTEM_UI_FLAG_LAYOUT_STABLE` 
     -   `View#SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN`
 
+public static final int **FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS**
+- 
+
 ## 0x02、 android.view.View
 
 `public void setFitsSystemWindows (boolean fitSystemWindows)`
