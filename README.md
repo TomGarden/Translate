@@ -1,5 +1,3 @@
-## Android 杨铭 普本
-
 ## 一、 个人信息
 
 - 姓名: 杨铭(♂)	
@@ -10,7 +8,9 @@
 
 ## 二、 主要经历
 
-### 2.0、 滴滴出行
+### 2.0、 [滴滴出行]
+- `~ 2020.11 ~ `
+- 通讯工具 , 待办模块
 
 ### 2.1、 [北京蜂群科技有限公司](https://manbanapp.com/)
 - `~ 2019.03 ~ `
@@ -42,8 +42,12 @@
 ### 3.2、 Linux / Unix
 
 1. Ubuntu : `~ 2017 ~`
-3. Mac : `~ 2020 ~ `
+2. Mac : `~ 2020 ~ `
+3. C++
 
 ### ···
+- [Google play : Lonely Square](https://play.google.com/store/apps/details?id=io.github.TomGarden.tetris)
+
+
 
 
