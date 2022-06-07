@@ -44,8 +44,4 @@
 
 ### ···
 
-## 四、 意愿
-
-[Macbook Pro](https://www.apple.com.cn/shop/buy-mac/macbook-pro/MVVK2CH/A#) 挺好用的，希望月薪能买得起
-
 
