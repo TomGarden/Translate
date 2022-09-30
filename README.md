@@ -35,8 +35,6 @@
 
 ## 三、 我的工具箱
 
-### 3.1、 Android
-
 1. AndroidStudio
 2. Java
 3. Kotlin
