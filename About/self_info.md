@@ -5,11 +5,11 @@
 ## 一、 个人信息
 
 
-|         |                    |           |                                               |
+
+|姓名     | 杨铭(♂)             |邮箱        |tom.work@foxmail.com                           |
 |---      |---                 |---        |---                                            |
-|姓名     | 杨铭(♂)             |笔记        |[GitHub Issues Blog](https://github.com/TomGarden/tom-notes/issues)|
 |手机/微信 |17611261931         |CSDN       |[blog.csdn.net/u014587769](https://blog.csdn.net/u014587769)|
-|邮箱     |tom.work@foxmail.com|GitHub      |[github.com/TomGarden](https://github.com/TomGarden/nameless_carpool)|
+|         |                    |GitHub      |[github.com/TomGarden](https://github.com/TomGarden/nameless_carpool)|
 
 
 ## 二、 主要经历 
@@ -21,16 +21,14 @@
 
 ## 三、 专业技能
 
-0. English , 读写水平一般 , 可以较为艰难的读写技术文档 , 英文社区简单交流 . 
-1. 熟悉 C++ 语言 , STL , makefile , shell 脚本 . 
-2. 熟悉 Docker , MySql , Linux , nginx .
-3. 熟练使用 Java , Kotlin , Git . 
+1. English , 读写水平一般 . 
+2. 熟悉 C++ 语言 , STL , makefile , shell 脚本 . 
+3. 熟悉 Docker , MySql , Linux , nginx .
+4. 熟练使用 Java , Kotlin , Git . 
 
 ## 四、 写在最后 
 
-我的意向工作 `Linux C++ 后端 研发` , 现在来说这不是我最擅长做的事情 . 
-
-专业技能中的关键字们让我很心虚 , 心虚因为自己对自己在这个领域的定位不清晰 . 
+我的意向工作 `Linux C++ 后端 研发` . 
 
 这几个月折腾了一个简单的后端程序(Demo) : https://github.com/TomGarden/nameless_carpool . 
 1. 客户端发 HTTP 消息 Linux 后端 , Nginx 接收消息
