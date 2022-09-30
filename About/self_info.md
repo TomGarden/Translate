@@ -6,10 +6,10 @@
 
 
 
-|姓名     | 杨铭(♂)             |邮箱        |tom.work@foxmail.com                           |
+|姓名     | 杨铭(♂)             |            |                                               |
 |---      |---                 |---        |---                                            |
-|手机/微信 |17611261931         |CSDN       |[blog.csdn.net/u014587769](https://blog.csdn.net/u014587769)|
-|         |                    |GitHub      |[github.com/TomGarden](https://github.com/TomGarden/nameless_carpool)|
+|手机     |17611261931         |CSDN       |[blog.csdn.net/u014587769](https://blog.csdn.net/u014587769)|
+|邮箱     |tom.work@foxmail.com|GitHub      |[github.com/TomGarden](https://github.com/TomGarden/nameless_carpool)|
 
 
 ## 二、 主要经历 
