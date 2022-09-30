@@ -10,26 +10,7 @@
 |姓名     | 杨铭(♂)             |笔记        |[GitHub Issues Blog](https://github.com/TomGarden/tom-notes/issues)|
 |手机/微信 |17611261931         |CSDN       |[blog.csdn.net/u014587769](https://blog.csdn.net/u014587769)|
 |邮箱     |tom.work@foxmail.com|GitHub      |[github.com/TomGarden](https://github.com/TomGarden/nameless_carpool)|
-|         |                    |           |                                               |
 
-<table >
-    <tr>
-        <td>姓名</td><td>:</td><td>杨铭(♂)</td>
-        <td>翻译 GFW</td><td>:</td><td><a href="https://tom.gitbook.io">tom.gitbook.io</a></td>
-    </tr>
-    <tr>
-        <td>手机/微信</td><td>:</td><td>17611261931</td>
-        <td>GitHub</td><td>:</td><td><a href="https://github.com/TomGarden/Tetris/releases">github.com/TomGarden</a></td>
-    </tr>
-    <tr>
-        <td>邮箱</td><td>:</td><td><a href="mailto:tom.work@foxmail.com">tom.work@foxmail.com</a></td>
-        <td>CSDN</td><td>:</td><td><a href="https://blog.csdn.net/u014587769">blog.csdn.net/u014587769</a></td>
-    </tr>
-    <tr>
-        <td></td><td></td><td></td>
-        <td>笔记</td><td>:</td><td><a href="https://github.com/TomGarden/tom-notes/issues">GitHub Issues Blog</a></td>
-    </tr>
-</table>
 
 ## 二、 主要经历 
 
