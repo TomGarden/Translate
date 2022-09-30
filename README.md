@@ -8,26 +8,28 @@
 
 ## 二、 主要经历
 
-### 2.0、 [滴滴出行]
+### 2.0、 找 C++ 研发工作中 : https://github.com/TomGarden/Translate/blob/master/About/self_info.md
+
+### 2.1、 [滴滴出行]
 - `~ 2020.11 ~ `
 - 通讯工具 , 待办模块
 
-### 2.1、 [北京蜂群科技有限公司](https://manbanapp.com/)
+### 2.2、 [北京蜂群科技有限公司](https://manbanapp.com/)
 - `~ 2019.03 ~ `
 - 独立开发、维护 [满班APP] Android 客户端
 - 满班 : 教育行业、教务管理系统、sass 
 
-### 2.2、 [北京云测信息技术有限公司·安全事业部](https://sec-console.testin.cn/scan/list.htm)
+### 2.3、 [北京云测信息技术有限公司·安全事业部](https://sec-console.testin.cn/scan/list.htm)
 - `~ 2017.07.07 ~ ` 
 - Android 代码审计 **重**
 - Web 渗透测试 **中**
 - Android 应用加固 **轻**
 
-### 2.3、 [河北北方学院·河北省人口健康信息化工程技术研究中心·移动互联研究室](http://kyc.hebeinu.edu.cn/webPage/showarticle1024.html)
+### 2.4、 [河北北方学院·河北省人口健康信息化工程技术研究中心·移动互联研究室](http://kyc.hebeinu.edu.cn/webPage/showarticle1024.html)
 - `~ 2014.08 ~ `
 - Android 开发
 
-### 2.4、 河北北方学院
+### 2.5、 河北北方学院
 - `~ 2013.09.01 ~ `
 - 计算机科学与技术专业　统招本科　二批次 
 
@@ -38,12 +40,12 @@
 1. AndroidStudio
 2. Java
 3. Kotlin
+4. C++
 
 ### 3.2、 Linux / Unix
 
 1. Ubuntu : `~ 2017 ~`
 2. Mac : `~ 2020 ~ `
-3. C++
 
 ### ···
 - [Google play : Lonely Square](https://play.google.com/store/apps/details?id=io.github.TomGarden.tetris)

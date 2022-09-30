@@ -1,8 +1,16 @@
-## C++ 杨铭 初级 · [![desktop](/About/Images/desktop.png)](/About/CV_desktop.md) · [![mobile](/About/Images/mobile.png)](/About/CV_mobile.md) · [![download](/About/Images/download.png)](https://raw.githubusercontent.com/TomGarden/Translate/master/About/SRC/Android研发-杨铭.pdf)    
+## C++ 杨铭 初级   
 
 **Android 应用层开发 转 C++ 后端开发**
 
 ## 一、 个人信息
+
+
+|         |                    |           |                                               |
+|---      |---                 |---        |---                                            |
+|姓名     | 杨铭(♂)             |笔记        |[GitHub Issues Blog](https://github.com/TomGarden/tom-notes/issues)|
+|手机/微信 |17611261931         |CSDN       |[blog.csdn.net/u014587769](https://blog.csdn.net/u014587769)|
+|邮箱     |tom.work@foxmail.com|GitHub      |[github.com/TomGarden](https://github.com/TomGarden/nameless_carpool)|
+|         |                    |           |                                               |
 
 <table >
     <tr>
@@ -38,8 +46,6 @@
 3. 熟练使用 Java , Kotlin , Git . 
 
 ## 四、 写在最后 
-
-**从细分领域来看(Java/Kotlin/Andrid -> Linux C++) , 我这算是转换工作方向了**
 
 我的意向工作 `Linux C++ 后端 研发` , 现在来说这不是我最擅长做的事情 . 
 
