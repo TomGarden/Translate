@@ -8,7 +8,9 @@
 
 ## 二、 主要经历
 
-### 2.0、 找 C++ 研发工作中 : https://github.com/TomGarden/Translate/blob/master/About/self_info.md
+### 2.0、 找 C++ 研发工作中 
+1. [c++ 相关能力介绍](https://github.com/TomGarden/Translate/blob/master/About/self_info.md)
+2. [个人过往经历详细介绍](https://github.com/TomGarden/Translate/blob/master/About/self_info_all.md)
 
 ### 2.1、 [北京小桔科技有限公司](https://www.didiglobal.com/) 
 - `~ 2020.11 ~ 2022.06`
