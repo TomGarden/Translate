@@ -10,8 +10,8 @@
 
 ### 2.0、 找 C++ 研发工作中 : https://github.com/TomGarden/Translate/blob/master/About/self_info.md
 
-### 2.1、 [滴滴出行]
-- `~ 2020.11 ~ `
+### 2.1、 [北京小桔科技有限公司](https://www.didiglobal.com/) 
+- `~ 2020.11 ~ 2022.06`
 - 通讯工具 , 待办模块
 
 ### 2.2、 [北京蜂群科技有限公司](https://manbanapp.com/)
