@@ -1,23 +1,22 @@
-## Android 研发 杨铭 · [![desktop](/About/Images/desktop.png)](/About/CV_desktop.md) · [![mobile](/About/Images/mobile.png)](/About/CV_mobile.md) · [![download](/About/Images/download.png)](https://raw.githubusercontent.com/TomGarden/Translate/master/About/SRC/Android研发-杨铭.pdf)    
-
+## Android 研发 杨铭 
 ## 一、 个人信息
 
 <table >
     <tr>
-        <td>姓名</td><td>:</td><td>杨铭(♂)</td>
-        <td>翻译 GFW</td><td>:</td><td><a href="https://tom.gitbook.io">tom.gitbook.io</a></td>
+        <td>姓名</td><td>杨铭(♂)</td>
+        <td>翻译 GFW</td><td><a href="https://tom.gitbook.io">tom.gitbook.io</a></td>
     </tr>
     <tr>
-        <td>手机/微信</td><td>:</td><td>17611261931</td>
-        <td>GitHub</td><td>:</td><td><a href="https://github.com/TomGarden/Tetris/releases">github.com/TomGarden</a></td>
+        <td>手机/微信</td><td>17611261931</td>
+        <td>GitHub</td><td><a href="https://github.com/TomGarden/Tetris/releases">github.com/TomGarden</a></td>
     </tr>
     <tr>
-        <td>邮箱</td><td>:</td><td><a href="mailto:tom.work@foxmail.com">tom.work@foxmail.com</a></td>
-        <td>年久失修的CSDN</td><td>:</td><td><a href="https://blog.csdn.net/u014587769">blog.csdn.net/u014587769</a></td>
+        <td>邮箱</td><td><a href="mailto:tom.work@foxmail.com">tom.work@foxmail.com</a></td>
+        <td>CSDN</td><td><a href="https://blog.csdn.net/u014587769">blog.csdn.net/u014587769</a></td>
     </tr>
     <tr>
-        <td></td><td></td><td></td>
-        <td>笔记</td><td>:</td><td><a href="https://github.com/TomGarden/tom-notes/issues">GitHub Issues Blog</a></td>
+        <td></td><td></td>
+        <td>笔记</td><td><a href="https://github.com/TomGarden/tom-notes/issues">GitHub Issues Blog</a></td>
     </tr>
 </table>
 
@@ -26,7 +25,7 @@
 `2014 ~ 至今`，一直围绕 Android 成长 (不论是 Android 研发，Android 应用扫描，渗透测试)。
 
 ### 2.0、 [滴滴 - 北京小桔科技有限公司](https://www.didiglobal.com/) 
-- <img src="SRC/images/didi_logo.jpeg" width = "20" height = "20" style="vertical-align:text-top" /> `2020.11.12~至今`
+- <img src="SRC/images/didi_logo.jpeg" width = "20" height = "20" style="vertical-align:text-top" /> `2020.11.12~2022.06.21`
 - Android 研发 
 
 ### 2.1、 [北京蜂群科技有限公司](https://manbanapp.com/)
