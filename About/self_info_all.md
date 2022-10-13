@@ -29,7 +29,7 @@
 ### 2.1、 [北京小桔科技有限公司](https://www.didiglobal.com/) 
 - <img src="SRC/images/didi_logo.jpeg" width = "20" height = "20" style="vertical-align:text-top" /> `2020.11.12~2022.06.21`
 - Android 研发 , 
-  - 内部通讯用户待办模块 . 
+  - 内部通讯 app 待办模块 . 
   - 货物清点进销存 Android 客户端 . 
 
 
