@@ -37,7 +37,7 @@
 - <img src="SRC/images/manban_fengqunkeji_logo.png" width = "16" height = "16" style="vertical-align:text-top" /> `2019.03.07~2020.11` 
 - 独立开发、维护 「满班APP」 Android 客户端
     [下载了解](https://manbanapp.cn/)
-- 满班 : 创业公司、教育行业、教务管理系统、sass
+- 创业公司、教育行业、教务管理系统、sass
 
 ### 2.3、 试错·空档
 - `2018.07~2018.12` 尝试做一个独立 Android 开发者 **受挫** 。
@@ -87,11 +87,14 @@
 - 英语读、写能力一般，[我的一点翻译 GFW](https://tom.gitbook.io)
 
 ### 3.2、 关于研发
-- 最近在读 C++ 相关的书籍 , 对 C++ 有[浅显的认识](https://github.com/TomGarden/nameless_carpool) . 
-- 对 python [有简单应用](https://github.com/TomGarden/tom-notes/blob/master/.github/github_actions/git_action_practice.py) .
 - 设计模式 : 观察者模式 、 装饰者模式 、 工厂模式 、 单例模式 。 
 - 对安全、加固、逆向、自动化测试有一定的理解 。
 - 熟练使用 Java/Kotlin 进行 Android 开发 .
+  - Java `2014 ~ 2019` 用于 Android 开发
+  - Kotlin `2019 ~ 2022` 用于 Android 开发 
+- `2022.6 ~ 2023.4` : 读了 C++ 相关的书籍 , 对 C++ 有[浅显的认识](https://github.com/TomGarden/nameless_carpool) . 
+- `2020年` : 对 python [有简单应用](https://github.com/TomGarden/tom-notes/blob/master/.github/github_actions/git_action_practice.py) .
+
 
 ### 3.3、 C++ 软件开发
 将来这里的内容会比较精彩 , 我正在建设这个段落 . 
