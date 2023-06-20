@@ -123,7 +123,7 @@
 8. 在项目中应用过蓝牙、网卡、摄像头……等硬件和传感器。
 9. 熟悉屏幕适配以及 Android 主题模块的业务逻辑。
 10. 具备独立开发能力，能独立分析并解决常见客户端崩溃和异常问题。
-11. 熟练是用主流开发库 RxJava、 Retrofit、 OkHttp 。
+11. 熟练使用主流开发库 RxJava、 Retrofit、 OkHttp 。
 12. 熟悉阅读 Android 源代码的方式并有所实践 :
     - _这里的图是我 2018 年画的 ; 2023-06-07 注 , 由于工作中并未进行系统开发 , 所以此时再看我已经没有什么印象了 , 我自己知道我有探究这些内容的能力 ._
     - [读过关于 init/zygote/system 进程的启动流程的部分源码](https://raw.githubusercontent.com/TomGarden/Translate/master/About/Read_AOSP_PNG/Android_源代码阅读_流程图_Zygote进程启动流程及细节_[Viso].png)
