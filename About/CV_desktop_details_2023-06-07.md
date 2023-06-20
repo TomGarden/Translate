@@ -102,6 +102,7 @@
 - 英语读、写能力一般，[我的一点翻译 GFW](https://tom.gitbook.io)
 
 ### 3.2、 关于研发
+- 架构模式 : MVC , VMP , MVVM . [🔗](https://github.com/TomGarden/tom-notes/issues/178)
 - 熟练使用 Java/Kotlin 进行 Android 开发 .
   - Java `2014 ~ 2019` 用于 Android 开发
   - Kotlin `2019 ~ 2022` 用于 Android 开发 
@@ -114,7 +115,7 @@
 ### 3.3、 Android
 1. 熟悉四大组件 : Activity、ContentProvider、BroadCast、Service。
 2. 熟悉常用组件控件与UI布局 : Intent、Fragment、ConstraintLayout、Dialog。
-3. 熟悉多线程编程和线程间的通信机制 Handler、 Message、 MessageQueue、 Lopper 。
+3. 熟悉多线程编程和线程间的通信机制 Handler、 Message、 MessageQueue、 Lopper 。 [🔗](https://github.com/TomGarden/tom-notes/issues/179)
 4. 熟悉控件联动、自定义控件、事件分发、手势拦截与处理并多有实践。
 5. 熟悉 SVG、属性动画、图片处理、2D绘图并对 3D 绘图曾有所应用。
 6. 熟悉文件存储、XML、SQLite/ContentProvider、网络、文件。
