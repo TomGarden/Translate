@@ -1,5 +1,4 @@
-## Android 研发 杨铭 · [![desktop](/About/Images/desktop.png)](/About/CV_desktop.md) · [![mobile](/About/Images/mobile.png)](/About/CV_mobile.md) · [![download](/About/Images/download.png)](https://raw.githubusercontent.com/TomGarden/Translate/master/About/SRC/Android研发-杨铭.pdf)    
-
+## Android 研发 杨铭 
 ## 一、 个人信息
 
 <table >
@@ -146,7 +145,34 @@
   - Clion + 本地 Docker(Linux)
 
 ## 四、 项目经历
-- _注:本小节内容有些久远了, 有新内容后再删除本注释_
+`4.-1 ~ 4.0` 添加时间 : 2023-06-20 11:05:21
+
+### 4.-1. D-Chat(类飞书通讯工具) - Android
+- 开发维护 [待办] 模块
+- 技术细节
+   - 引入并使用 Kotlin 开发维护
+   - 为了用户离线情况下也可以操作数据 , 使用了对象型数据库(Realm) ; 
+   - 为了多端动画效果一致 , 使用了动画三方库 Lottie ; 
+   - 组件化开发 , 涉及到的工具 : Gradle + AS 模块化插件
+
+### 4.0. [满班](https://manbanapp.cn/) - Android
+- 开发维护 Android 客户端
+- 技术细节
+   - 引入并使用 Kotlin 开发维护
+   - Fragment + Activity 页面组装
+   - 图片处理 : Glide 
+   - 依赖注入 : Dagger
+   - 网络 : RxJava、 Retrofit、 OkHttp、 Gson
+   - 视频压缩 : [ffmpeg / MediaCodec](https://github.com/TomGarden/tom-notes/tree/master/_posts/Collections/Android/point4dev/短视频)
+   - 图片压缩 
+   - 类似微信朋友圈功能 : RecyclerView + RecyclerViewAdapterHelper 
+   - 性能监控 : 友盟 / 阿里EMAS apm
+   - 日历视图 : 基于 [Android-Week-View](https://github.com/alamkanak/Android-Week-View) 定制自定义需求
+   - 数据库操作 : Room
+   - 蓝牙小票打印机
+   - 二维码扫描与生成
+   - ...
+
 
 ### 4.1、 俄罗斯方块(Android)
 - `2018.10~2018.12` - 独立开发 第四次重构

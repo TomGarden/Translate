@@ -37,16 +37,7 @@
 ### 2.3、 `2013.9.1~2017.6.30` 河北北方学院
 
 - 计算机科学与技术专业　统招本科　二批次 
-    - 2016 年中国大学生计算机设计大赛二等奖
-    - 蓝桥杯大赛（2016 年 3 月） Java 软件开发大学 B 组三等奖
-    - 2015 全国移动互联创新大赛高校软件组三等奖
-    - 2015 华北五省及港澳台大学生计算机应用大赛本科组三等奖
-
-- [河北省人口健康信息化工程技术研究中心·移动互联研究室](http://kyc.hebeinu.edu.cn/webPage/showarticle1024.html)
-    - `2014.08-2016.10`
-    1. 完成导师布置的研发任务。
-    2. _如有余力_ 参加各类大学生信息技术赛事。
-    3. _如再有余力_ 外包。
+- Android 研发 [河北省人口健康信息化工程技术研究中心·移动互联研究室](http://kyc.hebeinu.edu.cn/webPage/showarticle1024.html)
 
 ## 三、 专业技能
 
@@ -59,8 +50,8 @@
 - 对安全、加固、逆向、自动化测试有一定的理解。
 
 ### 3.3、 Android
-1. 熟悉四大组件 : Activity、ContentProvider、BroadCast、Service。
-2. 熟悉常用组件控件与UI布局 : Intent、Fragment、ConstraintLayout、ListView、Dialog。
+1. 熟悉四大组件 : Activity、ContentProvider、BroadCast、Service 。
+2. 熟悉常用组件控件与UI布局 : Intent 、 Fragment 、 ConstraintLayout 、 Dialog。
 3. 熟悉多线程编程和线程间的通信机制 Handler、 Message、 MessageQueue、 Lopper 。
 4. 熟悉控件联动、自定义控件、事件分发、手势拦截与处理并多有实践。
 5. 熟悉 SVG、属性动画、图片处理、2D绘图并对 3D 绘图曾有所应用。
