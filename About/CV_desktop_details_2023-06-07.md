@@ -61,7 +61,7 @@ C++ nameless_carpool : https://github.com/TomGarden/nameless_carpool
 - 为什么是后端 ? 
    - 那是 [俄罗斯方块](https://github.com/TomGarden/Tetris/releases/tag/1.5) ([GooglePlay](https://play.google.com/store/apps/details?id=io.github.TomGarden.tetris)) 构思的时候埋下的好奇的种子 .  
 
-### 2.2、 [北京小桔科技有限公司](https://www.didiglobal.com/) 
+### 2.2、 [北京嘀嘀无限科技发展有限公司](https://www.didiglobal.com/) 
 - <img src="SRC/images/didi_logo.jpeg" width = "20" height = "20" style="vertical-align:text-top" /> `2020.11.12~2022.06.21`  Android 研发 :
 - 效能平台部 Android 研发 , 内部通讯 app 待办模块 . 
 - 借调到橙心优选 , 货物清点进销存 Android 客户端 . 

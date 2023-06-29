@@ -47,7 +47,7 @@
 
 ## 三、 主要经历
 
-### 3.1、 [北京小桔科技有限公司](https://www.didiglobal.com/) 
+### 3.1、 [北京嘀嘀无限科技发展有限公司](https://www.didiglobal.com/) 
 - <img src="SRC/images/didi_logo.jpeg" width = "20" height = "20" style="vertical-align:text-top" /> `2020.11.12~2022.06.21`
 - 效能平台部 Android 研发 , 内部通讯 app 待办模块 . 
 - 橙心优选 , 货物清点进销存 Android 客户端 . 
@@ -68,4 +68,4 @@
 
 ## END
 
-[详细信息请跳转](./CV_desktop_details_2023-06-07.md)
+[详细信息请跳转](https://github.com/TomGarden/Translate/blob/master/About/CV_desktop_details_2023-06-07.md)
