@@ -84,3 +84,54 @@ I have 5+ years Android developer experience .
 **English** : My english is not very good , 
               i am continuing learn an practice , 
               this is my translate (en -> zh) : https://tom.gitbook.io
+
+
+## Introduce myself
+
+Hi/Hello , Nice to meet you . My name is Tom Yeo , Bachelor of Computer Science and Technology at Hebei North University . 
+
+I hope to join you compony , do the work as Android Engineer . 
+
+Actually , From 2014 to current time , I contuning to learn and apply Android development sills . 
+
+I have one shcool experience and three work experience . You can seem them as four experience . 
+
+**The first job** , from 2014 ~ 2017 , three years , I work for my teacher . The work content 2 point . 
+- one , Participate in the competition
+- two , Our teacher pulls the project , we do outsourcing . 
+- On the time , I learned my base skills , the base skill is Stay learning . 
+
+**The second job** , from 2017~2018 , One year , I work for `Testin Information Technology Company` . 
+- On the job , my compay focus on test application for other company . Include backend and frontend . 
+- Our team focus on security test and research . 
+- I focus on Android Security research . on the work:
+   - I learn and understand the most of existing android vulnerability . 
+   - I reproduce the vulnerabilities . And extract the feature code . 
+   - My work is the base of Android automated security test plateform . 
+- Until i found that the work can't improve my skill , and can't give me more rewards . 
+  I leaved it . I left . 
+
+
+Before the Third job , i pay 6 months to develop a small game Tetris . 
+It's now available on Google Play . but it's not name Tetris , I named it Lonely Square .
+
+
+**The Third Job** , from 2019 ~ 2020 , One and a half years . I work for `Bee Colony Technology Company` . 
+- On the job , My company's Sass product focus on help middle and small school do the list 
+    - manage student , teachers push every student status to our plateform , 
+      student parents get they are kids status from our plateform . 
+    - also , parents enable comunicate with each other by our system . 
+    - admissions , school's manager use our system get more new student . 
+- On the job , I focus on Independent development The Android Client , is names full class. 
+    - the FullClass app is me complete from zero to one . 
+    - the dev language is kotlin . 
+    - the architecture from mvc to mvp . 
+- Until DiDi Global company promise me more rewards , I left . 
+
+**The Forth Job**, from 2020~2022 , 19 month  . I work for `DiDi Global Information Technology Company`
+- On the job , Our Team focus on company Instant Messaging(IM) application dev and maintenance . 
+- My work is development and maintenance the TODO list module That is a part of IM , 
+- Unitl I think i'm not Enough time and chance to learn C++ skills . 
+
+
+I've been fascinated by C++ for a while , then I noticed your company's position
