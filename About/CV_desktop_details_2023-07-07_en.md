@@ -52,7 +52,7 @@ I have 5+ years Android developer experience .
 
 ### 3.3、 `2019.03.07~2020.11` [Beijing Bee Colony Technology Co., Ltd. (北京峰群科技有限公司) 🔗](https://manbanapp.com/)
 - <img src="SRC/images/manban_fengqunkeji_logo.png" width = "16" height = "16" style="vertical-align:text-top" />   Android Engineer
-- Start-up company ; Education industry ; Sass ;
+- Start-up company ; Education industry ; SaaS ;
 - Independent development and maintenance 满班(full class) android client  : 
   architecture design , business development , bug fixes , and so on .
 - [Download & learn more](https://manbanapp.cn/download)
@@ -90,7 +90,7 @@ I have 5+ years Android developer experience .
 
 Hi/Hello , Nice to meet you . My name is Tom Yeo , Bachelor of Computer Science and Technology at Hebei North University . 
 
-I hope to join you compony , do the work as Android Engineer . 
+I hope to join your compony , do the work as Android Engineer . 
 
 Actually , From 2014 to current time , I contuning to learn and apply Android development sills . 
 
@@ -102,7 +102,7 @@ I have one shcool experience and three work experience . You can seem them as fo
 - On the time , I learned my base skills , the base skill is Stay learning . 
 
 **The second job** , from 2017~2018 , One year , I work for `Testin Information Technology Company` . 
-- On the job , my compay focus on test application for other company . Include backend and frontend . 
+- On the job , my company focus on test application for other company . Include backend, frontend and mobile app . 
 - Our team focus on security test and research . 
 - I focus on Android Security research . on the work:
    - I learn and understand the most of existing android vulnerability . 
@@ -112,26 +112,68 @@ I have one shcool experience and three work experience . You can seem them as fo
   I leaved it . I left . 
 
 
-Before the Third job , i pay 6 months to develop a small game Tetris . 
+Before the Third job , i pay 6 months to develop a small game : Tetris . 
 It's now available on Google Play . but it's not name Tetris , I named it Lonely Square .
 
 
 **The Third Job** , from 2019 ~ 2020 , One and a half years . I work for `Bee Colony Technology Company` . 
-- On the job , My company's Sass product focus on help middle and small school do the list 
-    - manage student , teachers push every student status to our plateform , 
-      student parents get they are kids status from our plateform . 
+- On the job , My company's SaaS product focus on help middle and small school .
+    - manage student , teachers push every student status push to our plateform , 
+      student's parents get they are kids status from our plateform . 
     - also , parents enable comunicate with each other by our system . 
-    - admissions , school's manager use our system get more new student . 
-- On the job , I focus on Independent development The Android Client , is names full class. 
-    - the FullClass app is me complete from zero to one . 
+    - admissions , school's manager use our system get more new students . 
+- On the job , I focus on Independent development The Android Client , it's names is : full class. 
+    - I maked the FullClass app from zero to one . 
     - the dev language is kotlin . 
-    - the architecture from mvc to mvp . 
+    - the architecture from mvc change to mvp . 
 - Until DiDi Global company promise me more rewards , I left . 
 
 **The Forth Job**, from 2020~2022 , 19 month  . I work for `DiDi Global Information Technology Company`
 - On the job , Our Team focus on company Instant Messaging(IM) application dev and maintenance . 
 - My work is development and maintenance the TODO list module That is a part of IM , 
 - Unitl I think i'm not Enough time and chance to learn C++ skills . 
+   - Now , i have ability to dev c++ app . But i think it doesn't suit to develop backend app . 
+     so i abandant it. and now i'm finding a new job . 
 
 
 I've been fascinated by C++ for a while , then I noticed your company's position
+
+
+
+
+## Which project help you grow up . 
+
+I think the start-up company `Bee Colony Technology Company` , 
+it's SaaS project FullClass app make me grow up .
+
+I mean is , FullClass make me hold the whole things . 
+I build the project form 0 to 1 , I build many modules , 
+This modules togther make the project . 
+That is it's help for me . 
+
+The job , I just reuse myself android develop skill . 
+
+If i have to say that i have done a good thing. 
+I think it is i resisting the pressure . 
+Because the job is very stressful . 
+
+for the job , my advantage is i can resisting the pressure . 
+              my Weakness is i don't like pressure . 
+
+## Reason for leaving
+1. on some position , i think i con't learn more  or maybe i no chance grou up to stroger . 
+    I will left . 
+2. another reason is , if two job are seem same , i select the more rewards one . 
+
+
+## Why select us 
+Why? 
+maybe , i whant make my english is more good . 
+    on the work , every day i got 8 hours toghter with eng . 
+    on the same time , i can write code . 
+    That's great . 
+Another reason , I whant remote work , that make me more focused . 
+
+## repeat
+I'm sorry  , will you speak slowly ? 
+will you use simple words ? XXX i don't understand . 
