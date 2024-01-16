@@ -1,10 +1,10 @@
-## Android 研发 杨铭  
+## Android 研发 Tom Yeo  
 
 ## 一、 个人信息
 
 <table >
     <tr>
-        <td>姓名</td><td>杨铭(♂)</td>
+        <td>姓名</td><td>Tom Yeo(♂)</td>
         <td>翻译 GFW</td><td><a href="https://tom.gitbook.io">tom.gitbook.io</a></td>
     </tr>
     <tr>

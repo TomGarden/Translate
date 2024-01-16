@@ -1,10 +1,10 @@
-## Android 研发 杨铭 · 5年 / 本科 / 简要
+## Android 研发 Tom Yeo · 5年 / 本科 / 简要
 
 ## 一、 个人信息
 
 <table >
     <tr>
-        <td>姓名</td><td>:</td><td>杨铭(♂)</td>
+        <td>姓名</td><td>:</td><td>Tom Yeo(♂)</td>
         <td>笔记</td><td>:</td><td><a href="https://github.com/TomGarden/tom-notes/issues">GitHub Issues Blog</a></td>
     </tr>
     <tr>

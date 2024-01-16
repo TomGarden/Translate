@@ -1,8 +1,8 @@
-## Android 研发 杨铭 · [![desktop](/About/Images/desktop.png)](/About/CV_desktop.md) · [![mobile](/About/Images/mobile.png)](/About/CV_mobile.md) · [![download](/About/Images/download.png)](https://raw.githubusercontent.com/TomGarden/Translate/master/About/SRC/Android研发-杨铭.pdf)    
+## Android 研发 Tom Yeo · [![desktop](/About/Images/desktop.png)](/About/CV_desktop.md) · [![mobile](/About/Images/mobile.png)](/About/CV_mobile.md) · [![download](/About/Images/download.png)](https://raw.githubusercontent.com/TomGarden/Translate/master/About/SRC/Android研发-Tom Yeo.pdf)    
 
 ## 一、 个人信息
 
-- 姓名: 杨铭(♂)	
+- 姓名: Tom Yeo(♂)	
 - 手机/微信: 17611261931	
 - 邮箱: [tom.work@foxmail.com](mailto:tom.work@foxmail.com)	
 - 翻译 GFW: [tom.gitbook.io](https://tom.gitbook.io)

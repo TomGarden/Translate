@@ -1,6 +1,6 @@
 ## 一、 个人信息
 
-- 姓名: 杨铭(♂)	
+- 姓名: Tom Yeo(♂)	
 - 手机/微信: 17611261931	
 - 邮箱: [tom.work@foxmail.com](mailto:tom.work@foxmail.com)
 - 翻译 GFW: [tom.gitbook.io](https://tom.gitbook.io)

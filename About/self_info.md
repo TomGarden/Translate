@@ -1,11 +1,11 @@
-## C++ 杨铭 初级   
+## C++ Tom Yeo 初级   
 
 **Android 应用层研发 转 C++ 研发**
 
 ## 一、 个人信息
 
 
-|姓名     | 杨铭(♂)             |            |                                               |
+|姓名     | Tom Yeo(♂)             |            |                                               |
 |---      |---                 |---        |---                                            |
 |手机     |17611261931         |CSDN       |[blog.csdn.net/u014587769](https://blog.csdn.net/u014587769)|
 |邮箱     |tom.work@foxmail.com|GitHub      |[github.com/TomGarden](https://github.com/TomGarden/nameless_carpool)|
